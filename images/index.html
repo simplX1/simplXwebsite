@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-158139528-1"></script>
+        <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'UA-158139528-1');
+        </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="./Style Sheet/index/index.css" rel="stylesheet" type="text/css" />    
+    <title>Stewart Clay Personal WebSite</title>
+</head>
+<body>
+     <nav id="overlay">
+        <img src="Images/Close-btn-White.svg" class="close-btn" id="close-menu">
+        <ul>
+            <li>
+                <span onclick="window.location='index.html'">Home</span>
+            </li>
+            <li>
+                <span onclick="window.location='projects.html'">Projects</span>
+            </li>
+            <li>
+                <span onclick="window.location='about.html'">About</span>
+            </li>
+            <li>
+                <span onclick="window.location='contact.html'">Contact</span>
+            </li>
+        </ul>
+     </nav>
+
+
+     <header>
+         <img src="Images/Hamburger Icon-Black.svg" class="menu-btn" id="open-menu">
+         
+         <div class="headerItems">
+            <ul>
+                <li >
+                    <span onclick="window.location='index.html'">Home</span>
+                </li >
+                <li>
+                    <span onclick="window.location='projects.html'">Projects</span>
+                </li>
+                <li>
+                    <span onclick="window.location='about.html'">About</span>
+                </li>
+                <li>
+                    <span onclick="window.location='contact.html'">Contact</span>
+                </li>
+            </ul>
+         </div>
+     </header>
+     <section>
+        
+        <div class="Font-Text">
+        <h1>Stewart Clay</h1>
+        <h2>A designer and developer changing the with innovative ideas!!</h2>
+            <a href="about.html" class="myButton">Find Out More</a>
+       </div>
+     </section>
+     <script>
+         var overlay = document.getElementById('overlay');
+         var closeMenu = document.getElementById('close-menu');
+         document.getElementById('open-menu').addEventListener('click', function()
+         {
+             overlay.classList.add('show-menu');
+         });
+         document.getElementById('close-menu').addEventListener('click', function()
+         {
+             overlay.classList.remove('show-menu');
+         });
+
+
+     </script>
+       
+</body>
+</html>

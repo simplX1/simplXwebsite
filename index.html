@@ -9,6 +9,60 @@
 
 </head>
 <body>
-    <h1>simplx</h1>
+    <nav id="overlay">
+        <img src="Images/Close-btn-Black.svg" class="close-btn" id="close-menu">
+        <ul>
+            <li>
+                <span onclick="window.location='index.html'">HOME</span>
+            </li>
+            <li>
+                <span onclick="window.location='pages/our-team/our-team.html'">OUR TEAM</span>
+            </li>
+            <li>
+                <span onclick="window.location='pages/about/about.html'">ABOUT</span>
+            </li>
+            <li>
+                <span onclick="window.location='pages/contact/contact.html'">CONTACT</span>
+            </li>
+        </ul>
+     </nav>
+
+
+     <header>
+         <img src="Images/Hamburger Icon-Black.svg" class="menu-btn" id="open-menu">
+         
+         <div class="headerItems">
+            <ul>
+                <li>
+                    <span onclick="window.location='index.html'">HOME</span>
+                </li>
+                <li>
+                    <span onclick="window.location='pages/our-team/our-team.html'">OUR TEAM</span>
+                </li>
+                <li>
+                    <span onclick="window.location='pages/about/about.html'">ABOUT</span>
+                </li>
+                <li>
+                    <span onclick="window.location='pages/contact/contact.html'">CONTACT</span>
+                </li>
+            </ul>
+         </div>
+     </header>
+
+
+
+     <script>
+        var overlay = document.getElementById('overlay');
+        var closeMenu = document.getElementById('close-menu');
+        document.getElementById('open-menu').addEventListener('click', function()
+        {
+            overlay.classList.add('show-menu');
+        });
+        document.getElementById('close-menu').addEventListener('click', function()
+        {
+            overlay.classList.remove('show-menu');
+        });
+    </script>
+    
 </body>
 </html>
