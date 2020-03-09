@@ -10,19 +10,24 @@ header {
   padding-top: 25px;
   padding-right: 22px;
   background-color: white;
-  height: 20px;
+  height: 80px;
   -webkit-box-shadow: 0 0px 5px #404040;
           box-shadow: 0 0px 5px #404040;
 }
 
 header .menu-btn {
-  width: 20px;
+  width: 35px;
   float: right;
   cursor: pointer;
 }
 
 header .headerItems, header ul {
   display: none;
+}
+
+header .header, header .logo {
+  width: 250px;
+  height: 70px;
 }
 
 nav {
@@ -66,7 +71,7 @@ nav span {
   display: block;
 }
 
-@media only screen and (min-width: 705px) {
+@media only screen and (min-width: 1064px) {
   .menu-btn {
     display: none;
   }
@@ -76,6 +81,7 @@ nav span {
     font-weight: 1;
     letter-spacing: 0.05em;
     display: block;
+    margin-top: -50px;
   }
   ul {
     list-style: none;

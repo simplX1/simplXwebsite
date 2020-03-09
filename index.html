@@ -9,6 +9,7 @@
 
 </head>
 <body>
+    <!-- this is the overlay shown when on non desktop devices--> 
     <nav id="overlay">
         <img src="images/Close-btn-Black.svg" class="close-btn" id="close-menu">
         <ul>
@@ -26,11 +27,11 @@
             </li>
         </ul>
      </nav>
-
-
+     <!---->
+     <!-- this is the header menu shown when on larger screens like a desktop-->
      <header>
          <img src="images/Hamburger Icon-Black.svg" class="menu-btn" id="open-menu">
-         
+         <img class="logo" src="../../images/simplx black.png">
          <div class="headerItems">
             <ul>
                 <li>
@@ -48,9 +49,9 @@
             </ul>
          </div>
      </header>
+     <!---->
 
-
-
+     <!--this will make the hamburger icon active and the x button active when clicked -->
      <script>
         var overlay = document.getElementById('overlay');
         var closeMenu = document.getElementById('close-menu');
@@ -63,6 +64,6 @@
             overlay.classList.remove('show-menu');
         });
     </script>
-
+    <!---->
 </body>
 </html>

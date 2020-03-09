@@ -15,18 +15,28 @@ header{
     padding-top: 25px;
     padding-right: 22px;
     background-color: white;
-    height: 20px;
+    height: 80px;
+    
     box-shadow: 0 0px 5px #404040;
+    
 .menu-btn{
-    width: 20px;
+    width: 35px;
     float: right;
     cursor: pointer;
 }
 .headerItems, ul{
     
       display: none;
-    
+      
 }
+
+
+.header, .logo{
+    
+    width: 250px;
+    height: 70px;
+ 
+  }
 }
 //------------------------------------
 
@@ -71,19 +81,24 @@ nav{
 }
 //-------------------------------------------
 
-
-@media only screen and (min-width: 705px){
-
+//this is used for larger screen sizes 
+@media only screen and (min-width: 1064px){
+    //hides the hamburger icon ---------------
     .menu-btn{
         display: none;
     }
+    //-----------------
+    //header menu------------------
     header .headerItems, header ul {
         margin-top: -10px;
         font-size: 25px;
         font-weight: 1;
         letter-spacing: 0.05em;
         display: block;
-        
+     
+            margin-top: -50px;
+          
+       
     } 
         ul{
             list-style: none;
@@ -94,4 +109,5 @@ nav{
           padding: 20px;
            
         }
+    //---------------------------------------------
     }
