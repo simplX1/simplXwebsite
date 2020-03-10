@@ -51,7 +51,7 @@ nav ul {
   list-style-type: none;
   margin: 20% auto 1 auto;
   padding: 0;
-  -ms-grid-columns: (25%);
+  -ms-grid-columns: (25%)[4];
       grid-template-columns: repeat(4, 25%);
   width: 80%;
 }
