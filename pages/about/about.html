@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Our Team</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='../../css/about/about.css'>
+</head>
+<body>
+    <!-- this is the overlay shown when on non desktop devices--> 
+    <nav id="overlay">
+        <img src="images/Close-btn-Black.svg" class="close-btn" id="close-menu">
+        <ul>
+            <li>
+                <span onclick="window.location='index.html'">HOME</span>
+            </li>
+            <li>
+                <span onclick="window.location='pages/our-team/our-team.html'">OUR TEAM</span>
+            </li>
+            <li>
+                <span onclick="window.location='pages/about/about.html'">ABOUT</span>
+            </li>
+            <li>
+                <span onclick="window.location='pages/contact/contact.html'">CONTACT</span>
+            </li>
+        </ul>
+     </nav>
+     <!---->
+     <!-- this is the header menu shown when on larger screens like a desktop-->
+     <header>
+         <img src="images/Hamburger Icon-Black.svg" class="menu-btn" id="open-menu">
+         <img class="logo" src="../../images/simplx-black.png">
+         <div class="headerItems">
+            <ul>
+                <li>
+                    <span onclick="window.location='../../index.html'">HOME</span>
+                </li>
+                <li>
+                    <span onclick="window.location='../our-team/our-team.html'">OUR TEAM</span>
+                </li>
+                <li>
+                    <span onclick="window.location='../about/about.html'">ABOUT</span>
+                </li>
+                <li>
+                    <span onclick="window.location='../contact/contact.html'">CONTACT</span>
+                </li>
+            </ul>
+         </div>
+     </header>
+     <!---->
+
+     <!--this will make the hamburger icon active and the x button active when clicked -->
+     <script>
+        var overlay = document.getElementById('overlay');
+        var closeMenu = document.getElementById('close-menu');
+        document.getElementById('open-menu').addEventListener('click', function()
+        {
+            overlay.classList.add('show-menu');
+        });
+        document.getElementById('close-menu').addEventListener('click', function()
+        {
+            overlay.classList.remove('show-menu');
+        });
+    </script>
+    <!---->
+</body>
+</html>

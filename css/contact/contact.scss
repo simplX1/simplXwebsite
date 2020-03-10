@@ -1,0 +1,113 @@
+//fix issue with header on desktop and the size of the div
+
+@import url('https://fonts.googleapis.com/css?family=Prompt&display=swap');
+body, html{
+
+    font-family: 'Prompt', sans-serif;
+    margin: 0;
+    padding:0;
+  }
+
+//this is the header nav that is shown inplace of the hamburger icon when on bigger screens------------
+header{
+    
+    padding:1em;
+    padding-top: 25px;
+    padding-right: 22px;
+    background-color: white;
+    height: 80px;
+    
+    box-shadow: 0 0px 5px #404040;
+    
+.menu-btn{
+    width: 35px;
+    float: right;
+    cursor: pointer;
+}
+.headerItems, ul{
+    
+      display: none;
+      
+}
+
+
+.header, .logo{
+    
+    width: 250px;
+    height: 70px;
+ 
+  }
+}
+//------------------------------------
+
+//This is the overlay that is shown when the hamburger icon is clicked-------------------
+nav{
+    position: absolute;
+    background: white;
+    padding: 2em;
+    width: calc(100% - 4em);
+    height: calc(100vh - 4em);
+    display: none;
+    .close-btn{
+        margin-right: -10px;
+        margin-top: -10px;
+        width: 20px;
+        float: right;
+        cursor: pointer;
+    }
+    ul{
+        
+        list-style-type: none;
+        margin: 20% auto 1 auto;
+        padding: 0;
+       
+        grid-template-columns: repeat(4,25%);
+        width: 80%;
+        li{
+            margin: 15px;
+        }
+    }
+    span{
+        text-decoration: none;
+        color: black;
+        font-weight: bold;
+        font-size: 1.4em;
+        
+    }
+}
+.show-menu{
+    display: block;
+
+}
+//-------------------------------------------
+
+//this is used for larger screen sizes 
+@media only screen and (min-width: 1064px){
+    //hides the hamburger icon ---------------
+    .menu-btn{
+        display: none;
+    }
+    //-----------------
+    //header menu------------------
+    header .headerItems, header ul {
+        margin-top: -10px;
+        font-size: 25px;
+        font-weight: 1;
+        letter-spacing: 0.05em;
+        display: block;
+     
+            margin-top: -50px;
+          
+       
+    } 
+        ul{
+            list-style: none;
+            text-align: center;       
+        }
+        li{
+            display: inline;
+          padding: 20px;
+           
+        }
+    //---------------------------------------------
+    }

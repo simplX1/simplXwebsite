@@ -1,5 +1,4 @@
 //fix issue with header on desktop and the size of the div
-
 @import url('https://fonts.googleapis.com/css?family=Prompt&display=swap');
 body, html{
 
@@ -29,6 +28,8 @@ header{
       display: none;
       
 }
+
+
 .header, .logo{
     
     width: 250px;
@@ -37,8 +38,6 @@ header{
   }
 }
 //------------------------------------
-
-
 
 //This is the overlay that is shown when the hamburger icon is clicked-------------------
 nav{
@@ -94,11 +93,8 @@ nav{
         font-size: 25px;
         font-weight: 1;
         letter-spacing: 0.05em;
-        display: block;
-     
+        display: block;  
             margin-top: -50px;
-          
-       
     } 
         ul{
             list-style: none;

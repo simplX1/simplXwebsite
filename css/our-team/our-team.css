@@ -51,7 +51,7 @@ nav ul {
   list-style-type: none;
   margin: 20% auto 1 auto;
   padding: 0;
-  -ms-grid-columns: (25%)[4];
+  -ms-grid-columns: (25%);
       grid-template-columns: repeat(4, 25%);
   width: 80%;
 }
@@ -92,4 +92,4 @@ nav span {
     padding: 20px;
   }
 }
-/*# sourceMappingURL=contact.css.map */
+/*# sourceMappingURL=our-team.css.map */

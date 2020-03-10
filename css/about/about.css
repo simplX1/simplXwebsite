@@ -1,1 +1,95 @@
-/* No CSS *//*# sourceMappingURL=about.css.map */
+@import url("https://fonts.googleapis.com/css?family=Prompt&display=swap");
+body, html {
+  font-family: 'Prompt', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  padding: 1em;
+  padding-top: 25px;
+  padding-right: 22px;
+  background-color: white;
+  height: 80px;
+  -webkit-box-shadow: 0 0px 5px #404040;
+          box-shadow: 0 0px 5px #404040;
+}
+
+header .menu-btn {
+  width: 35px;
+  float: right;
+  cursor: pointer;
+}
+
+header .headerItems, header ul {
+  display: none;
+}
+
+header .header, header .logo {
+  width: 250px;
+  height: 70px;
+}
+
+nav {
+  position: absolute;
+  background: white;
+  padding: 2em;
+  width: calc(100% - 4em);
+  height: calc(100vh - 4em);
+  display: none;
+}
+
+nav .close-btn {
+  margin-right: -10px;
+  margin-top: -10px;
+  width: 20px;
+  float: right;
+  cursor: pointer;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 20% auto 1 auto;
+  padding: 0;
+  -ms-grid-columns: (25%)[4];
+      grid-template-columns: repeat(4, 25%);
+  width: 80%;
+}
+
+nav ul li {
+  margin: 15px;
+}
+
+nav span {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  font-size: 1.4em;
+}
+
+.show-menu {
+  display: block;
+}
+
+@media only screen and (min-width: 1064px) {
+  .menu-btn {
+    display: none;
+  }
+  header .headerItems, header ul {
+    margin-top: -10px;
+    font-size: 25px;
+    font-weight: 1;
+    letter-spacing: 0.05em;
+    display: block;
+    margin-top: -50px;
+  }
+  ul {
+    list-style: none;
+    text-align: center;
+  }
+  li {
+    display: inline;
+    padding: 20px;
+  }
+}
+/*# sourceMappingURL=about.css.map */
