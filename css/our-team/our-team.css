@@ -181,10 +181,25 @@ nav span {
   }
   .left, .right {
     text-align: center;
-    width: 35%;
+    width: 30%;
   }
   .middle {
     width: 20%;
+  }
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  .foot {
+    background: grey;
+  }
+  .column1 {
+    text-align: center;
+    color: white;
+    float: left;
+    width: 50%;
   }
   /* Clear floats after the columns */
   .row:after {
