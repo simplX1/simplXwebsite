@@ -1,6 +1,8 @@
 @import url("https://fonts.googleapis.com/css?family=Prompt&display=swap");
 body, html {
+  background-color: white;
   font-family: 'Prompt', sans-serif;
+  font-size: 22px;
   margin: 0;
   padding: 0;
 }
@@ -115,84 +117,12 @@ nav span {
   height: auto;
 }
 
-.column1 {
-  text-align: center;
-  width: 100%;
-}
-
-.column2 {
-  text-align: center;
-  margin-left: 10%;
-  margin-right: 10%;
-  width: 80%;
-}
-
-.column3 {
-  text-align: center;
-  width: 100%;
-}
-
-.column4 {
-  text-align: center;
-  width: 100%;
-}
-
-.column5 {
-  text-align: center;
-  margin-left: 10%;
-  margin-right: 10%;
-  width: 80%;
-}
-
-.column6 {
-  text-align: center;
-  width: 100%;
-}
-
 @media only screen and (min-width: 1064px) {
   .menu-btn {
     display: none;
   }
-  .stewart-image {
-    width: auto;
-    height: auto;
-  }
-  .container .text {
-    margin-left: 10%;
-    margin-right: 10%;
-    text-align: center;
-  }
-  .column1 {
-    float: left;
-    text-align: center;
-    width: 33.33%;
-  }
-  .column2 {
-    float: left;
-    text-align: left;
-    width: 20%;
-  }
-  .column3 {
-    float: right;
-    width: 33.33%;
-  }
-  .column4 {
-    float: left;
-    text-align: center;
-    width: 33.33%;
-  }
-  .column5 {
-    float: left;
-    text-align: left;
-    width: 20%;
-  }
-  .column6 {
-    float: right;
-    width: 33.33%;
-  }
   /* Clear floats after the columns */
   .row:after {
-    text-align: left;
     content: "";
     display: table;
     clear: both;
@@ -212,6 +142,33 @@ nav span {
   li {
     display: inline;
     padding: 20px;
+  }
+  .stewart-image {
+    width: auto;
+    height: auto;
+  }
+  .container .text {
+    margin-left: 10%;
+    margin-right: 10%;
+    text-align: center;
+  }
+  /* Create three unequal columns that floats next to each other */
+  .column {
+    float: left;
+    padding: 10px;
+  }
+  .left, .right {
+    text-align: center;
+    width: 35%;
+  }
+  .middle {
+    width: 20%;
+  }
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
   }
 }
 /*# sourceMappingURL=our-team.css.map */
