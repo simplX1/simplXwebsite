@@ -121,6 +121,27 @@ nav{
     
 
 }
+.column {
+    float: left;
+  }
+  
+  .left, .right {
+    text-align: center;
+    width: 100%;
+  }
+  
+  .middle {
+      margin-left: 10%;
+      text-align: center;
+    width: 80%;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
 .stewart-image{
     width: auto;
     height: auto;
