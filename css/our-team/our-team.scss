@@ -306,13 +306,15 @@ h1{
     height:270px;
     width: 100%;
     color: white;
-    
+    .foot,p{
+      color: white;
+    }
 }
 h2{
   color: white;
 }
 p{
-  color: white;
+  color: black;
 }
 .column-name{
     //position: absolute;
@@ -320,14 +322,14 @@ p{
     margin-left: auto;
     margin-right: auto;
     font-size: 65px;
-    color: white;
+    color: black;
     left: 0;
     right: 0;      
 }
   .column1 {
     margin-top: -75px;
     text-align: center;
-    color: white;
+    color: black;
     float: left;
     width: 49%;
 
