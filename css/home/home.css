@@ -147,9 +147,9 @@ h2 {
 }
 
 .head-image .head-image, .head-image h2 {
-  font-size: 65px;
-  padding-top: 2%;
-  color: black;
+  font-size: 30px;
+  padding-top: 50%;
+  color: white;
 }
 
 /* Clear floats after the columns */
@@ -159,14 +159,83 @@ h2 {
   clear: both;
 }
 
-.foot {
+.site-info {
+  text-align: center;
+  width: 80%;
+  margin-left: 10%;
+}
+
+.site-info .site-info, .site-info p {
+  color: black;
+  font-size: 20px;
+}
+
+.what-we-do-home {
   background: url(https://github.com/simplX1/simplXwebsite/blob/master/images/footer/footer-image.jpg?raw=true) no-repeat center center fixed;
   background-position: center center;
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
-  height: 200px;
+  height: 1900px;
   width: 100%;
+  /* Clear floats after the columns */
+}
+
+.what-we-do-home .what-we-do-home, .what-we-do-home h1 {
+  text-align: center;
+  padding-top: 60px;
+  color: white;
+  font-size: 25px;
+}
+
+.what-we-do-home .what-we-do-home, .what-we-do-home .what-we-do-info-column {
+  margin-top: 50px;
+  text-align: center;
+  float: left;
+  width: 100%;
+}
+
+.what-we-do-home .what-we-do-home .what-we-do-home, .what-we-do-home .what-we-do-home h2, .what-we-do-home .what-we-do-info-column .what-we-do-home, .what-we-do-home .what-we-do-info-column h2 {
+  width: 80%;
+  color: white;
+  font-size: 30px;
+  font-weight: bold;
+  margin-top: -5px;
+}
+
+.what-we-do-home .what-we-do-home .what-we-do-home, .what-we-do-home .what-we-do-home p, .what-we-do-home .what-we-do-info-column .what-we-do-home, .what-we-do-home .what-we-do-info-column p {
+  width: 80%;
+  color: white;
+  font-size: 13;
+  font-weight: bold;
+  margin-left: 10%;
+  margin-top: -10px;
+}
+
+.what-we-do-home .what-we-do-home, .what-we-do-home .row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.foot {
+  margin-top: 25px;
+  background: url(https://github.com/simplX1/simplXwebsite/blob/master/images/footer/footer-image.jpg?raw=true) no-repeat center center fixed;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  height: 220px;
+  width: 100%;
+}
+
+.foot .foot, .foot h2 {
+  color: white;
+  margin-top: 10px;
+}
+
+.foot .foot, .foot p {
+  color: white;
 }
 
 @media only screen and (min-width: 1064px) {
@@ -275,7 +344,7 @@ h2 {
     font-size: 40px;
   }
   .what-we-do-home .what-we-do-home, .what-we-do-home .what-we-do-info-column {
-    margin-top: 10%;
+    margin-top: 15%;
     text-align: center;
     float: left;
     width: 33.33%;
@@ -285,7 +354,7 @@ h2 {
     color: white;
     font-size: 30px;
     font-weight: bold;
-    padding-top: -10%;
+    margin-top: -30%;
   }
   .what-we-do-home .what-we-do-home, .what-we-do-home .row:after {
     content: "";
