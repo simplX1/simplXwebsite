@@ -71,16 +71,7 @@ nav span {
   display: block;
 }
 
-.banner {
-  background: url(https://github.com/simplX1/simplXwebsite/blob/master/images/home/notebook-1280538.jpg?raw=true) no-repeat center center fixed;
-  margin-top: -100px;
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
-  height: 500PX;
-  width: 100%;
-}
+
 
 h1 {
   text-align: center;

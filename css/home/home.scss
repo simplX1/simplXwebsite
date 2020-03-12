@@ -82,30 +82,9 @@ nav{
 
 }
 //-------------------------------------------
-
-//position: relative;
-.banner{
-   background: url(https://github.com/simplX1/simplXwebsite/blob/master/images/home/notebook-1280538.jpg?raw=true) no-repeat center center fixed;
-    margin-top: -100px;
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
-    height:500PX;
-    width: 100%;
-}
-h1{
-    //position: absolute;
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
-    font-size: 80px;
-    color: white;
-    left: 0;
-    right: 0;      
-}
-    .column-name{
-        //position: absolute;
+  
+    h1{
+        position: absolute;
         text-align: center;
         margin-left: auto;
         margin-right: auto;

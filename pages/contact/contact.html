@@ -3,34 +3,33 @@
 <head>
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title>Contact</title>
+    <title>Contact Us</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' type='text/css' media='screen' href='../../css/contact/contact.css'>
-
 </head>
 <body>
     <!-- this is the overlay shown when on non desktop devices--> 
     <nav id="overlay">
-        <img src="images/Close-btn-Black.svg" class="close-btn" id="close-menu">
+        <img src="../../images/Close-btn-Black.svg" class="close-btn" id="close-menu">
         <ul>
             <li>
-                <span onclick="window.location='index.html'">HOME</span>
+                <span onclick="window.location='../../index.html'">HOME</span>
             </li>
             <li>
-                <span onclick="window.location='pages/our-team/our-team.html'">OUR TEAM</span>
+                <span onclick="window.location='../our-team/our-team.html'">OUR TEAM</span>
             </li>
             <li>
-                <span onclick="window.location='pages/about/about.html'">ABOUT</span>
+                <span onclick="window.location='../about/about.html'">ABOUT</span>
             </li>
             <li>
-                <span onclick="window.location='pages/contact/contact.html'">CONTACT</span>
+                <span onclick="window.location='contact.html'">CONTACT</span>
             </li>
         </ul>
      </nav>
      <!---->
      <!-- this is the header menu shown when on larger screens like a desktop-->
      <header>
-         <img src="images/Hamburger Icon-Black.svg" class="menu-btn" id="open-menu">
+         <img src="../../images/Hamburger Icon-Black.svg" class="menu-btn" id="open-menu">
          <img class="logo" src="../../images/simplx-black.png">
          <div class="headerItems">
             <ul>
@@ -44,12 +43,87 @@
                     <span onclick="window.location='../about/about.html'">ABOUT</span>
                 </li>
                 <li>
-                    <span onclick="window.location='../contact/contact.html'">CONTACT</span>
+                    <span onclick="window.location='contact.html'">CONTACT</span>
                 </li>
             </ul>
          </div>
      </header>
      <!---->
+
+     <section class="container">
+         
+        <div class="banner">
+            <h1 class="hea">Contact Our Team</h1>
+        </div>
+         
+     </section>
+     <section class="container2">
+         <div class="contact-us">
+             <h2>Contact Our Team</h2>
+             
+             <p>
+                Please leave us with your contact details in order for one
+                of our team members to get back to you. Alternatively send us an
+                email to simplx.africa@gmail.com with any queries you may have.
+            </p>
+         </div>
+     </section>
+     <section class="container3"></section>
+     <div class="row0">
+        <div class="column1">
+            <form  name="_next"action="https://app.99inbound.com/api/e/OH3ndIM6" method="POST">    
+                <div class="inputs">
+                    <div class="row2">
+                    <div class="block">
+                        <label for="firstName" class="firstNameLabel">FIRST NAME:</label>
+                        <input class="firstNameInput" id="firstName" type="text" name="firstname" required="" />
+                    </div>
+                    <div class="block">
+                        <label for="lastName" class="lastNameLabel">LAST NAME:</label>
+                        <input class="lastNameInput" id="lastName" type="text" name="lastname" required="" />
+                    </div>
+                </div>
+                    <div class="block">
+                        <label for="emailAddress" class="emailAddressLabel">EMAIL ADDRESS:</label>
+                        <input class="emailAddressInput" id="emailAddress" type="text" name="emailAddress"  required="" />
+                    </div>
+                    <div class="block">
+                        <label for="contactNumber" class="contactNumberLabel">CONTACT NUMBER:</label>
+                        <input class="contactNumberInput" id="contactNumber" type="text" name="contactNumber"  required="" />
+                    </div>
+                    <div class="block">
+                        <label for="message" class="messageLabel">WHAT CAN WE DO FOR YOU?</label>
+                        <textarea class="messageInput" id="message" rows="4" name="body" required=""></textarea>
+                    </div>
+                    <div class="block1">
+                        <button class="submit" type="submit" value="Send">Submit</button>
+                    </div>
+                </div>
+                </form>
+                
+        </div>
+        <div class="column2">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3585.1274974130847!2d28.00201031561881!3d-26.0293840632117!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1e9576a660ed8771%3A0x1558e0c57109596a!2s26%20Robin%20Dr%2C%20Fourways%2C%20Sandton%2C%202055!5e0!3m2!1sen!2sza!4v1583924378557!5m2!1sen!2sza"></iframe>
+       </div>
+        
+      </div>
+
+      <section class="foot">
+    
+        <div class="row">
+          <div class="column01">
+              <h2>Address:</h2>
+              <p>26 Robin Drive</p>
+              <p>Fourways</p>
+              <p>Johannesburg</p>
+          </div>
+          <div class="column01">
+              <h2>Contact:</h2>
+              <p>Enquiry@simplx.co.za</p>
+          </div>
+        </div> 
+      </section>
+      
 
      <!--this will make the hamburger icon active and the x button active when clicked -->
      <script>
