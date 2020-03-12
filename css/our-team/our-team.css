@@ -89,7 +89,7 @@ h1 {
   margin-left: auto;
   margin-right: auto;
   font-size: 80px;
-  color: black;
+  color: white;
   left: 0;
   right: 0;
 }
@@ -260,6 +260,16 @@ h2 {
     background-size: cover;
     height: 270px;
     width: 100%;
+    color: white;
+  }
+  .foot .foot, .foot p {
+    color: white;
+  }
+  h2 {
+    color: white;
+  }
+  p {
+    color: black;
   }
   .column-name {
     text-align: center;
