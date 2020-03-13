@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
@@ -7,8 +8,9 @@
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' type='text/css' media='screen' href='../../css/about/about.css'>
 </head>
+
 <body>
-    <!-- this is the overlay shown when on non desktop devices--> 
+    <!-- this is the overlay shown when on non desktop devices-->
     <nav id="overlay">
         <img src="images/Close-btn-Black.svg" class="close-btn" id="close-menu">
         <ul>
@@ -25,13 +27,13 @@
                 <span onclick="window.location='../contact/contact.html'">CONTACT</span>
             </li>
         </ul>
-     </nav>
-     <!---->
-     <!-- this is the header menu shown when on larger screens like a desktop-->
-     <header>
-         <img src="../../images/Hamburger Icon-Black.svg" class="menu-btn" id="open-menu">
-         <img class="logo" src="../../images/simplx-black.png">
-         <div class="headerItems">
+    </nav>
+    <!---->
+    <!-- this is the header menu shown when on larger screens like a desktop-->
+    <header>
+        <img src="../../images/Hamburger Icon-Black.svg" class="menu-btn" id="open-menu">
+        <img class="logo" src="../../images/simplx-black.png">
+        <div class="headerItems">
             <ul>
                 <li>
                     <span onclick="window.location='../../index.html'">HOME</span>
@@ -46,23 +48,115 @@
                     <span onclick="window.location='../contact/contact.html'">CONTACT</span>
                 </li>
             </ul>
-         </div>
-     </header>
-     <!---->
+        </div>
+    </header>
+    <!---->
 
-     <!--this will make the hamburger icon active and the x button active when clicked -->
-     <script>
+    <section class="container">
+
+        <div class="banner">
+            <h1>About Us</h1>
+        </div>
+
+    </section>
+    <section class="cotainer1">
+        <div class="about-us">
+            <p>SimplX is a new business that was formed at the beginning of 2020 by two
+                graduates with Bachelor of Computer and Information Sciences in
+                Application Development degrees. We strive to ensure top notch quality
+                in any project we are involved in and strive to give our customers the
+                service they deserve. We have been involved in various aspects of
+                development over the past 4 years and have undoubtedly produced top
+                quality services and developments. The team has worked together in
+                various different website development and deployment, web applications,
+                desktop applications as well as android applications. The skills offered
+                by our team are one of the best in the industry as we strive to ensure
+                customer satisfaction is met as well as the the products and services
+                we offer are done in an effective and timely manner.</p>
+        </div>
+    </section>
+
+    <!-- Slideshow container -->
+    <div class="slideshow-container">
+
+        <!-- Full-width images with number and caption text -->
+        <div class="mySlides fade">
+            <div class="numbertext">1 / 5</div>
+            <img src="../../images/about/BulletFront Home.PNG" style="width:100%">
+            <div class="text">BulletFront Home</div>
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">2 / 5</div>
+            <img src="../../images/about/Krucon Home page.PNG" style="width:100%">
+            <div class="text">Krucon Home</div>
+        </div>
+        <div class="mySlides fade">
+            <div class="numbertext">3 / 5</div>
+            <img src="../../images/about/Bulletfront Colletcorp.PNG" style="width:100%">
+            <div class="text">BulletFronts Selection Of Bullets</div>
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">4 / 5</div>
+            <img src="../../images/about/Krucon Contact.PNG" style="width:100%">
+            <div class="text">Krucon Contact Us</div>
+        </div>
+        <div class="mySlides fade">
+            <div class="numbertext">5 / 5</div>
+            <img src="../../images/about/Krucon.PNG" style="width:100%">
+            <div class="text">What Krucon Can Do</div>
+        </div>
+
+        <!-- Next and previous buttons -->
+    </div>
+    <br>
+
+    <!-- The dots/circles -->
+    <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(4)"></span>
+        <span class="dot" onclick="currentSlide(5)"></span>
+    </div>
+
+    <!--this will make the hamburger icon active and the x button active when clicked -->
+    <script>
         var overlay = document.getElementById('overlay');
         var closeMenu = document.getElementById('close-menu');
-        document.getElementById('open-menu').addEventListener('click', function()
-        {
+        document.getElementById('open-menu').addEventListener('click', function () {
             overlay.classList.add('show-menu');
         });
-        document.getElementById('close-menu').addEventListener('click', function()
-        {
+        document.getElementById('close-menu').addEventListener('click', function () {
             overlay.classList.remove('show-menu');
         });
+        //for slide show
+        var slideIndex = 0;
+        showSlides();
+
+        function showSlides() {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("dot");
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) { slideIndex = 1 }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+            setTimeout(showSlides, 2000); // Change image every 2 seconds
+        }
+
+
+
+
     </script>
     <!---->
 </body>
+
 </html>
