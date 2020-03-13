@@ -301,7 +301,7 @@ h2 {
 }
 
 .banner {
-  margin-top: -25px;
+  margin-top: 0px;
   background: url(https://github.com/simplX1/simplXwebsite/blob/master/images/home/notebook-1280538.jpg?raw=true) no-repeat center center fixed;
   background-position: center center;
   background-repeat: no-repeat;
@@ -314,7 +314,7 @@ h2 {
 .banner h1 {
   font-size: 30px;
   text-align: center;
-  padding-top: 60%;
+  padding-top: 50%;
   color: white;
 }
 
@@ -455,6 +455,15 @@ h2 {
   background-size: cover;
   height: 200px;
   width: 100%;
+}
+
+.foot .foot, .foot h2 {
+  color: white;
+  margin-top: -2px;
+}
+
+.foot .foot, .foot p {
+  color: white;
 }
 
 @media only screen and (min-width: 1064px) {
