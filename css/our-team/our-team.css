@@ -71,15 +71,21 @@ nav span {
   display: block;
 }
 
-.banner {
+.head-image {
+  margin-top: -37px;
   background: url(https://github.com/simplX1/simplXwebsite/blob/master/images/home/notebook-1280538.jpg?raw=true) no-repeat center center fixed;
-  margin-top: -100px;
   background-position: center center;
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
-  height: 500PX;
+  height: 500px;
   width: 100%;
+}
+
+.head-image .head-image, .head-image h1 {
+  font-size: 45px;
+  padding-top: 60%;
+  color: white;
 }
 
 h1 {
@@ -121,6 +127,10 @@ h2 {
 .left, .right {
   text-align: center;
   width: 100%;
+}
+
+.left .left, .left p, .right .left, .right p {
+  font-size: 50px;
 }
 
 .middle {
