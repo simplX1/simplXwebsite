@@ -318,7 +318,7 @@ nav{
 
 
 .banner{
-  margin-top: -25px;
+  margin-top: 0px;
    background: url(https://github.com/simplX1/simplXwebsite/blob/master/images/home/notebook-1280538.jpg?raw=true) no-repeat center center fixed;
     background-position: center center;
     background-repeat: no-repeat;
@@ -339,7 +339,7 @@ nav{
       //  right: 0; 
       font-size: 30px;
       text-align: center;
-      padding-top: 60%;
+      padding-top: 50%;
       color:white;     
     }    
 }
@@ -463,6 +463,7 @@ nav{
 
 .foot
   {
+    
     background:  url(https://github.com/simplX1/simplXwebsite/blob/master/images/footer/footer-image.jpg?raw=true) no-repeat center center fixed;
     background-position: center center;
     background-repeat: no-repeat;
@@ -470,7 +471,16 @@ nav{
     background-size: cover;
 
     height:200px;
-    width: 100%;
+    width:100%;
+    .foot,h2
+    {
+      color: white;
+      margin-top: -2px;
+    }
+    .foot,p{
+      color:white;
+
+    }
     
 }
 
