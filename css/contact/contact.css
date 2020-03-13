@@ -33,7 +33,6 @@ header .header, header .logo {
 }
 
 nav {
-  position: absolute;
   background: white;
   padding: 2em;
   width: calc(100% - 4em);
