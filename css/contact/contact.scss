@@ -83,11 +83,11 @@ nav{
 
 }
 //-------------------------------------------
-.container{
+
 
 
 .banner{
-  margin-top: -25px;
+  margin-top: 100px;
    background: url(https://github.com/simplX1/simplXwebsite/blob/master/images/home/notebook-1280538.jpg?raw=true) no-repeat center center fixed;
     background-position: center center;
     background-repeat: no-repeat;
@@ -96,7 +96,8 @@ nav{
     height:420px;
     width: 100%;
   
-    h1{
+    .banner,h1{
+      margin-top: -100px;
         //position: absolute;
        // text-align: center;
       //  margin-left: auto;
@@ -106,13 +107,13 @@ nav{
       //  color: white;
       //  left: 0;
       //  right: 0; 
-      font-size: 30px;
+      font-size: 50px;
       text-align: center;
-      padding-top: 60%;
+      padding-top: 10%;
       color:white;     
     }    
 }
-}
+
 
 .container2, .contact-us{
     text-align: center;
@@ -392,7 +393,7 @@ form{
   
     }
     .column1{
-      width: 83%;
+      width: 49%;
       text-align: center;
     }
     .container4{
