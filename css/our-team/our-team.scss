@@ -2,7 +2,6 @@
 
 @import url('https://fonts.googleapis.com/css?family=Prompt&display=swap');
 body, html{
-    background-color: rgb(255, 255, 255);
 
     font-family: 'Prompt', sans-serif;
     font-size: 22px;
@@ -16,7 +15,7 @@ header{
     padding:1em;
     padding-top: 25px;
     padding-right: 22px;
-    background-color: white;
+    background-color:transparent;
     height: 50px;
     
     box-shadow: 0 0px 5px #404040;
@@ -46,7 +45,6 @@ header{
 
 //This is the overlay that is shown when the hamburger icon is clicked-------------------
 nav{
-    position: absolute;
     background: white;
     padding: 2em;
     width: calc(100% - 4em);
@@ -86,33 +84,50 @@ nav{
 //-------------------------------------------
 
 //position: relative;
-
-.banner{
-   background: url(https://github.com/simplX1/simplXwebsite/blob/master/images/home/notebook-1280538.jpg?raw=true) no-repeat center center fixed;
+.head-image
+  {
+    margin-top: -37px;
+    background:  url(https://github.com/simplX1/simplXwebsite/blob/master/images/home/notebook-1280538.jpg?raw=true) no-repeat center center fixed;
     background-position: center center;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
-    height:420px;
+    height:500px;
     width: 100%;
     
-    h1{
-        position: absolute;
+    .head-image,h1{
+      font-size: 45px;
+      padding-top: 60%;
+      color:white;
+    }
+}
+h1{
+    //position: absolute;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 80px;
+    color: white;
+    left: 0;
+    right: 0;      
+}
+    .column-name{
+        //position: absolute;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+        font-size: 80px;
+        color: black;
+        left: 0;
+        right: 0;      
+    }
+
+    h2{
+        position: relative;
         text-align: center;
         margin-left: auto;
         margin-right: auto;
         margin-top: 100px;
-        font-size: 80px;
-        color: white;
-        left: 0;
-        right: 0;      
-    }
-    h2{
-        position: absolute;
-        text-align: center;
-        margin-left: auto;
-        margin-right: auto;
-        margin-top: 250px;
         font-size: 30px;
         color: white;
         left: 0;
@@ -120,12 +135,16 @@ nav{
     }
     
 
-}
+
+
 .column {
     float: left;
   }
   
   .left, .right {
+    .left,p{
+      font-size: 50px;
+    }
     text-align: center;
     width: 100%;
   }
@@ -152,6 +171,7 @@ nav{
 }
 
 .column1 {
+  margin-top: -95px;
     font-size: 15px;
     text-align: Left;
   color: white;
@@ -240,6 +260,7 @@ nav{
 
         /* Create three unequal columns that floats next to each other */
 .column {
+    margin-top: 1px;
     float: left;
     padding: 10px;
   }
@@ -260,8 +281,34 @@ nav{
     clear: both;
   }
 
+  .column-name{
+    //position: absolute;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 200px;
+    color: black;
+    left: 0;
+    right: 0;      
+}
+  .head-image
+  {
+    margin-top: -65px;
+    background:  url(https://github.com/simplX1/simplXwebsite/blob/master/images/home/notebook-1280538.jpg?raw=true) no-repeat center center fixed;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    height:500px;
+    width: 100%;
+    h1{
+        color: white;
+        padding-top: 8%;
+    }
+}
   .foot
   {
+    margin-top: 50px;
     background:  url(https://github.com/simplX1/simplXwebsite/blob/master/images/footer/footer-image.jpg?raw=true) no-repeat center center fixed;
     background-position: center center;
     background-repeat: no-repeat;
@@ -269,13 +316,35 @@ nav{
     background-size: cover;
     height:270px;
     width: 100%;
-    
+    color: white;
+    .foot,p{
+      color: white;
+    }
+}
+h2{
+  color: white;
+}
+p{
+  color: black;
+}
+.column-name{
+    //position: absolute;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 65px;
+    color: black;
+    left: 0;
+    right: 0;      
 }
   .column1 {
-      text-align: center;
-    color: white;
+    margin-top: -75px;
+    text-align: center;
+    color: black;
     float: left;
-    width: 50%;
+    width: 49%;
+
+    
   }
   
   /* Clear floats after the columns */
