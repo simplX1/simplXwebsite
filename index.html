@@ -6,49 +6,21 @@
     <title>Home</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' type='text/css' media='screen' href='css/home/home.css'>
-
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <script> 
+        $(function(){
+          $("#header").load("../../header.html"); 
+        });
+        $(function(){
+          $("#footer").load("../../footer.html"); 
+        });
+        </script> 
 </head>
 <body>
-    <!-- this is the overlay shown when on non desktop devices--> 
-    <nav id="overlay">
-        <img src="images/Close-btn-Black.svg" class="close-btn" id="close-menu">
-        <ul>
-            <li>
-                <span onclick="window.location='index.html'">HOME</span>
-            </li>
-            <li>
-                <span onclick="window.location='pages/our-team/our-team.html'">OUR TEAM</span>
-            </li>
-            <li>
-                <span onclick="window.location='pages/about/about.html'">ABOUT</span>
-            </li>
-            <li>
-                <span onclick="window.location='pages/contact/contact.html'">CONTACT</span>
-            </li>
-        </ul>
-     </nav>
-     <!---->
-     <!-- this is the header menu shown when on larger screens like a desktop-->
-     <header>
-         <img src="images/Hamburger Icon-Black.svg" class="menu-btn" id="open-menu">
-         <img class="logo" src="images/simplx-black.png">
-         <div class="headerItems">
-            <ul>
-                <li>
-                    <span onclick="window.location='index.html'">HOME</span>
-                </li>
-                <li>
-                    <span onclick="window.location='pages/our-team/our-team.html'">OUR TEAM</span>
-                </li>
-                <li>
-                    <span onclick="window.location='pages/about/about.html'">ABOUT</span>
-                </li>
-                <li>
-                    <span onclick="window.location='pages/contact/contact.html'">CONTACT</span>
-                </li>
-            </ul>
-         </div>
-     </header>
+    <div id="header">
+
+    </div>
+
      <!---->
      <section class="head-image">
         <h1></h1>
@@ -100,23 +72,9 @@
 
 
 
-    <section class="foot">
-    
-        <div class="row">
-          <div class="column1" style="color: white;">
-              <h2>Address:</h2>
-              <p>26 Robin Drive</p>
-              <p>Fourways</p>
-              <p>Johannesburg</p>
-          </div>
-          <div class="column1" style="color: white;">
-              <h2>Contact:</h2>
-              <p>Enquiry@simplx.co.za</p>
-          </div>
-        </div> 
-      </section>
-      
-    <br>
+    <div id="footer">
+
+    </div>
 
      <!--this will make the hamburger icon active and the x button active when clicked -->
      <script>
