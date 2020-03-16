@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css?family=Prompt&display=swap");
 .footer-column {
   float: left;
-  width: 24.99%;
+  width: 100%;
 }
 
 .footer-column .footer-column, .footer-column h2 {
@@ -52,5 +52,56 @@ footer {
   background-color: #4b4b4b;
   color: white;
   text-align: center;
+}
+
+@media only screen and (min-width: 1064px) {
+  footer {
+    /* Clear floats after the columns */
+  }
+  footer .footer-column {
+    float: left;
+    width: 24.99%;
+  }
+  footer .footer-column .footer-column, footer .footer-column h2 {
+    font-size: 30px;
+  }
+  footer .footer-row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  footer .img {
+    text-align: center;
+    height: 2%;
+    width: 2%;
+  }
+  footer .fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 20px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+  }
+  footer .fa:hover {
+    opacity: 0.7;
+  }
+  footer .fa-facebook {
+    background: #3B5998;
+    color: white;
+  }
+  footer .fa-instagram {
+    background: #f09433;
+    color: white;
+  }
+  footer footer {
+    font-family: 'prompt','sans-serif';
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #4b4b4b;
+    color: white;
+    text-align: center;
+  }
 }
 /*# sourceMappingURL=footer.css.map */
