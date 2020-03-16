@@ -4,89 +4,21 @@
 body, html{
 
     font-family: 'Prompt', sans-serif;
-    font-size: 22px;
+    
     margin: 0;
     padding:0;
   }
 
-//this is the header nav that is shown inplace of the hamburger icon when on bigger screens------------
-header{
-    
-    padding:1em;
-    padding-top: 25px;
-    padding-right: 22px;
-    background-color:transparent;
-    height: 50px;
-    
-    box-shadow: 0 0px 5px #404040;
-    
-.menu-btn{
-    margin-top: 10px;
-    margin-right: 15px;
-    width: 35px;
-    float: right;
-    cursor: pointer;
-}
-.headerItems, ul{
-    
-      display: none;
-      
-}
-.header, .logo{
-    
-    width: 200px;
-    height: 56px;
- 
-  }
-}
-//------------------------------------
 
 
 
-//This is the overlay that is shown when the hamburger icon is clicked-------------------
-nav{
-    background: white;
-    padding: 2em;
-    width: calc(100% - 4em);
-    height: calc(100vh - 4em);
-    display: none;
-    .close-btn{
-        margin-right: -10px;
-        margin-top: -10px;
-        width: 20px;
-        float: right;
-        cursor: pointer;
-    }
-    ul{
-        
-        list-style-type: none;
-        margin: 20% auto 1 auto;
-        padding: 0;
-       
-        //grid-template-columns: repeat(4,25%);
-        width: 80%;
-        li{
-            margin: 15px;
-        }
-    }
-    span{
-        text-decoration: none;
-        color: black;
-        font-weight: bold;
-        font-size: 1.4em;
-        
-    }
-}
-.show-menu{
-    display: block;
 
-}
 //-------------------------------------------
 
 //position: relative;
 .head-image
   {
-    margin-top: -37px;
+    margin-top: -100px;
     background:  url(https://github.com/simplX1/simplXwebsite/blob/master/images/home/notebook-1280538.jpg?raw=true) no-repeat center center fixed;
     background-position: center center;
     background-repeat: no-repeat;
@@ -96,21 +28,13 @@ nav{
     width: 100%;
     
     .head-image,h1{
+      text-align: center;
       font-size: 45px;
       padding-top: 60%;
       color:white;
     }
 }
-h1{
-    //position: absolute;
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
-    font-size: 80px;
-    color: white;
-    left: 0;
-    right: 0;      
-}
+
     .column-name{
         //position: absolute;
         text-align: center;
@@ -122,17 +46,7 @@ h1{
         right: 0;      
     }
 
-    h2{
-        position: relative;
-        text-align: center;
-        margin-left: auto;
-        margin-right: auto;
-        margin-top: 100px;
-        font-size: 30px;
-        color: white;
-        left: 0;
-        right: 0;  
-    }
+    
     
 
 
@@ -162,11 +76,11 @@ h1{
     clear: both;
   }
 .stewart-image{
-    width: auto;
+    width: 400px;
     height: auto;
 }
     .donovan-image{
-        width: auto;
+        width: 400px;
         height: auto;
 }
 
@@ -187,24 +101,11 @@ h1{
   clear: both;
 }
 
-.foot
-  {
-    background:  url(https://github.com/simplX1/simplXwebsite/blob/master/images/footer/footer-image.jpg?raw=true) no-repeat center center fixed;
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
-    height:200px;
-    width: 100%;
-    
-}
   
 //this is used for larger screen sizes 
 @media only screen and (min-width: 1064px){
     //hides the hamburger icon ---------------
-    .menu-btn{
-        display: none;
-    }
+ 
     
    
 
@@ -213,36 +114,9 @@ h1{
 
 
 
-          
-          /* Clear floats after the columns */
-          .row:after {
-            content: "";
-            display: table;
-            clear: both;
-          }
     //-----------------
     //header menu------------------
-    header .headerItems, header ul {
-        margin-top: -10px;
-        font-size: 25px;
-        font-weight: 1;
-        letter-spacing: 0.05em;
-        display: block;
-     
-            margin-top: -50px;
-          
-       
-    } 
-
-        ul{
-            list-style: none;
-            text-align: center;       
-        }
-        li{
-            display: inline;
-          padding: 20px;
-           
-        }
+    
     //---------------------------------------------
     //Columns
 
@@ -293,7 +167,7 @@ h1{
 }
   .head-image
   {
-    margin-top: -65px;
+    margin-top: -38px;
     background:  url(https://github.com/simplX1/simplXwebsite/blob/master/images/home/notebook-1280538.jpg?raw=true) no-repeat center center fixed;
     background-position: center center;
     background-repeat: no-repeat;
@@ -303,57 +177,10 @@ h1{
     width: 100%;
     h1{
         color: white;
-        padding-top: 8%;
+        padding-top: 12%;
     }
 }
-  .foot
-  {
-    margin-top: 50px;
-    background:  url(https://github.com/simplX1/simplXwebsite/blob/master/images/footer/footer-image.jpg?raw=true) no-repeat center center fixed;
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
-    height:270px;
-    width: 100%;
-    color: white;
-    .foot,p{
-      color: white;
-    }
-}
-h2{
-  color: white;
-}
-p{
-  color: black;
-}
-.column-name{
-    //position: absolute;
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
-    font-size: 65px;
-    color: black;
-    left: 0;
-    right: 0;      
-}
-  .column1 {
-    margin-top: -75px;
-    text-align: center;
-    color: black;
-    float: left;
-    width: 49%;
-
-    
-  }
   
-  /* Clear floats after the columns */
-  .row:after {
-    content: "";
-    display: table;
-    clear: both;
-  }
-
   
 
 
