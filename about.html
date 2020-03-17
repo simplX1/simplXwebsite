@@ -8,14 +8,23 @@
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' type='text/css' media='screen' href='css/about/about.css'>
     <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
-    <script> 
-        $(function(){
-          $("#header").load("header.html"); 
+    <script>
+        $(function () {
+            $("#header").load("header.html");
         });
-        $(function(){
-          $("#footer").load("footer.html"); 
+        $(function () {
+            $("#footer").load("footer.html");
         });
-        </script> 
+    </script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-159549600-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-159549600-1');
+    </script>
 </head>
 
 <body>
@@ -96,7 +105,7 @@
     <div id="footer">
 
     </div>
-      
+
 
     <!--this will make the hamburger icon active and the x button active when clicked -->
     <script>
