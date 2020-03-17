@@ -1,11 +1,18 @@
 @import url("https://fonts.googleapis.com/css?family=Prompt&display=swap");
 .footer-column {
+  display: block;
+  text-align: center;
   float: left;
   width: 100%;
 }
 
 .footer-column .footer-column, .footer-column h2 {
   font-size: 30px;
+}
+
+.inline-block-style {
+  display: block;
+  text-align: center;
 }
 
 /* Clear floats after the columns */
@@ -64,6 +71,10 @@ footer {
   }
   footer .footer-column .footer-column, footer .footer-column h2 {
     font-size: 30px;
+  }
+  footer .inline-block-style {
+    display: inline-block;
+    text-align: left;
   }
   footer .footer-row:after {
     content: "";

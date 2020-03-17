@@ -6,7 +6,7 @@ body, html {
 }
 
 .head-image {
-  margin-top: -100px;
+  margin-top: -25px;
   background: url(https://github.com/simplX1/simplXwebsite/blob/master/images/home/notebook-1280538.jpg?raw=true) no-repeat center center fixed;
   background-position: center center;
   background-repeat: no-repeat;
@@ -18,8 +18,8 @@ body, html {
 
 .head-image .head-image, .head-image h1 {
   text-align: center;
-  font-size: 45px;
-  padding-top: 60%;
+  font-size: 38px;
+  padding-top: 50%;
   color: white;
 }
 
@@ -65,7 +65,7 @@ body, html {
 }
 
 .donovan-image {
-  width: 400px;
+  width: 300px;
   height: auto;
 }
 
