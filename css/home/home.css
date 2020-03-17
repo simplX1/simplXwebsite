@@ -5,6 +5,27 @@ body, html {
   padding: 0;
 }
 
+.banner {
+  background: url(https://github.com/simplX1/simplXwebsite/blob/master/images/home/notebook-1280538.jpg?raw=true) no-repeat center center fixed;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  height: 500px;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  width: 100%;
+}
+
+.banner .banner, .banner h1 {
+  text-align: center;
+  color: white;
+  vertical-align: middle;
+  margin: auto;
+  font-size: 40px;
+}
+
 .column {
   float: left;
 }
@@ -249,6 +270,28 @@ body, html {
     content: "";
     display: table;
     clear: both;
+  }
+}
+
+@media only screen and (min-width: 646px) {
+  .banner {
+    background: url(https://github.com/simplX1/simplXwebsite/blob/master/images/home/notebook-1280538.jpg?raw=true) no-repeat center center fixed;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 500px;
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    width: 100%;
+  }
+  .banner .banner, .banner h1 {
+    text-align: center;
+    color: white;
+    vertical-align: middle;
+    margin: auto;
+    font-size: 80px;
   }
 }
 /*# sourceMappingURL=home.css.map */
