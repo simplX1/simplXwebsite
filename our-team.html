@@ -1,74 +1,93 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <meta charset='utf-8'>
-    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title>Our Team</title>
-    <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link rel='stylesheet' type='text/css' media='screen' href='css/our-team/our-team.css'>
-    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
-    <script> 
-        $(function(){
-          $("#header").load("header.html"); 
-        });
-        $(function(){
-          $("#footer").load("footer.html"); 
-        });
-        </script> 
-</head>
-<body>
-    <div id="header">
 
-    </div>
-     <!---->
-     <section class="banner">
-      <h1>Meet Our Team!</h1>
+<head>
+  <meta charset='utf-8'>
+  <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+  <title>Our Team</title>
+  <meta name='viewport' content='width=device-width, initial-scale=1'>
+  <link rel='stylesheet' type='text/css' media='screen' href='css/our-team/our-team.css'>
+  <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+  <script>
+    $(function () {
+      $("#header").load("header.html");
+    });
+    $(function () {
+      $("#footer").load("footer.html");
+    });
+  </script>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-159549600-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'UA-159549600-1');
+  </script>
+</head>
+
+<body>
+  <div id="header">
+
+  </div>
+  <!---->
+  <section class="banner">
+    <h1>Meet Our Team!</h1>
   </section>
-<br>
-     
-<div class="row">
+  <br>
+
+  <div class="row">
     <div class="column left" style="background-color:#ffffff;">
       <p class="column-name">Stewart Clay</p>
     </div>
     <div class="column middle" style="background-color:#ffffff;">
-      
-      <p>Stewart Clay matriculated in 2015,  thereafter began studying at Varsity College Sandton. Stewart studied a Bachelors of Computer and Information Sciences in Application Development and graduated in 2019. Stewart was invited to Varsity College's recognition day whereby the college recognizes and congratulates their top achieving students. Stewart used his initiative whilst studying and did various different free lance work throughout his studies, gaining the crucial experience needed in the business world. </p>
+
+      <p>Stewart Clay matriculated in 2015, thereafter began studying at Varsity College Sandton. Stewart studied a
+        Bachelors of Computer and Information Sciences in Application Development and graduated in 2019. Stewart was
+        invited to Varsity College's recognition day whereby the college recognizes and congratulates their top
+        achieving students. Stewart used his initiative whilst studying and did various different free lance work
+        throughout his studies, gaining the crucial experience needed in the business world. </p>
     </div>
     <div class="column right" style="background-color:#ffffff;">
-        <img src="images/our-team/IMG_1599Cropped.jpg" class="donovan-image" id="selfie">
+      <img src="images/our-team/IMG_1599Cropped.jpg" class="donovan-image" id="selfie">
     </div>
   </div>
 
   <div class="row">
     <div class="column left" style="background-color:#ffffff;">
-        <p class="column-name">Donovan Kruger</p>
+      <p class="column-name">Donovan Kruger</p>
     </div>
     <div class="column middle" style="background-color:#ffffff;">
-      
-      <p>Donovan Kruger matriculated in 2015, thereafter began studying at Varsity College Sandton. Donovan studied a Bachelors of Computer and Information Sciences in Application Development and graduated in 2019. Donovan was also invited to Varsity College's recognition day whereby the college recognizes and congratulates their top achieving students. Donovan assisted Stewart in his freelance work and came together with Stewart to form the new business SimplX at the beginning of 2020. Donovan is an extremely committed and determined individual, ensuring he does any task at hand to the best of his knowledge and ability and ensures outstanding results.</p>
+
+      <p>Donovan Kruger matriculated in 2015, thereafter began studying at Varsity College Sandton. Donovan studied a
+        Bachelors of Computer and Information Sciences in Application Development and graduated in 2019. Donovan was
+        also invited to Varsity College's recognition day whereby the college recognizes and congratulates their top
+        achieving students. Donovan assisted Stewart in his freelance work and came together with Stewart to form the
+        new business SimplX at the beginning of 2020. Donovan is an extremely committed and determined individual,
+        ensuring he does any task at hand to the best of his knowledge and ability and ensures outstanding results.</p>
     </div>
     <div class="column right" style="background-color:#ffffff;">
-        <img src="images/our-team/IMG_1597Cropped.jpg" width=""  class="donovan-image" id="selfie">
+      <img src="images/our-team/IMG_1597Cropped.jpg" width="" class="donovan-image" id="selfie">
     </div>
   </div>
 
-    <div id="footer">
+  <div id="footer">
 
-    </div>
+  </div>
 
-     <!--this will make the hamburger icon active and the x button active when clicked -->
-     <script>
-        var overlay = document.getElementById('overlay');
-        var closeMenu = document.getElementById('close-menu');
-        document.getElementById('open-menu').addEventListener('click', function()
-        {
-            overlay.classList.add('show-menu');
-        });
-        document.getElementById('close-menu').addEventListener('click', function()
-        {
-            overlay.classList.remove('show-menu');
-        });
-    </script>
-    <!---->
+  <!--this will make the hamburger icon active and the x button active when clicked -->
+  <script>
+    var overlay = document.getElementById('overlay');
+    var closeMenu = document.getElementById('close-menu');
+    document.getElementById('open-menu').addEventListener('click', function () {
+      overlay.classList.add('show-menu');
+    });
+    document.getElementById('close-menu').addEventListener('click', function () {
+      overlay.classList.remove('show-menu');
+    });
+  </script>
+  <!---->
 </body>
+
 </html>
