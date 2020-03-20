@@ -12,7 +12,7 @@ body, html{
 
 //------------------------------------
 .banner{
-  background: url(https://github.com/simplX1/simplXwebsite/blob/master/images/home/notebook-1280538.jpg?raw=true) no-repeat center center fixed;
+  background: url("../../images/home/programming.png") no-repeat center center fixed;
   background-position: center center;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -63,33 +63,9 @@ body, html{
   }
 
 
-.column1 {
-    font-size: 15px;
-    text-align: Left;
-  color: white;
-  float: left;
-  margin-left: 10px;
-  width: 40%;
-}
 
-.head-image
-  {
-    margin-top: -10px;
-    background:  url(https://github.com/simplX1/simplXwebsite/blob/master/images/home/notebook-1280538.jpg?raw=true) no-repeat center center fixed;
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
-    height:500px;
-    width: 100%;
-    
-    .head-image,h2{
-      text-align: center;
-      font-size: 30px;
-      padding-top: 40%;
-      color:white;
-    }
-}
+
+
 
 
 
@@ -107,11 +83,11 @@ body, html{
 
 .what-we-do-home{
                 
-  background:  url(https://github.com/simplX1/simplXwebsite/blob/master/images/home/cup-of-coffee-1280537.jpg?raw=true) no-repeat center center fixed;
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
+  background:  url("../../images/home/cup-of-coffee-1280537.jpg") no-repeat center center fixed;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
   height:1850px;
   width: 100%;
 
@@ -255,11 +231,11 @@ body, html{
 
 }
 .testimonial-home{
-  background:  url(https://github.com/simplX1/simplXwebsite/blob/master/images/home/cup-of-coffee-1280537.jpg?raw=true) no-repeat center center fixed;
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
+  background:  url("../../images/home/cup-of-coffee-1280537.jpg") no-repeat center center fixed;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
   height:1700px;
   width: 100%;
   margin-top: -500px;
@@ -394,7 +370,7 @@ body, html{
   .head-image
   {
     //margin-top: 70px;
-    background:  url(https://github.com/simplX1/simplXwebsite/blob/master/images/home/notebook-1280538.jpg?raw=true) no-repeat center center fixed;
+    background:  url("../../images/home/programming.png") no-repeat center center fixed;
     background-position: center center;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -421,11 +397,7 @@ body, html{
 }
 
 .what-we-do-home{
-  background:  url(https://github.com/simplX1/simplXwebsite/blob/master/images/home/cup-of-coffee-1280537.jpg?raw=true) no-repeat center center fixed;
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
+  
     height:760px;
     width: 100%;
     padding-top: 100px;
@@ -544,11 +516,7 @@ body, html{
   //hides the hamburger icon ---------------
 
   .banner{
-    background: url(https://github.com/simplX1/simplXwebsite/blob/master/images/home/notebook-1280538.jpg?raw=true) no-repeat center center fixed;
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
+    
     height: 500px;
     display: inline-flex;
     width: 100%;
