@@ -57,31 +57,6 @@ body, html {
   width: 40%;
 }
 
-.head-image {
-  margin-top: -10px;
-  background: url(https://github.com/simplX1/simplXwebsite/blob/master/images/home/notebook-1280538.jpg?raw=true) no-repeat center center fixed;
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
-  height: 500px;
-  width: 100%;
-}
-
-.head-image .head-image, .head-image h2 {
-  text-align: center;
-  font-size: 30px;
-  padding-top: 40%;
-  color: white;
-}
-
-/* Clear floats after the columns */
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
 .site-info {
   text-align: center;
   width: 80%;
@@ -99,9 +74,14 @@ body, html {
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
-  height: 1900px;
+  height: 1000px;
   width: 100%;
   /* Clear floats after the columns */
+}
+
+.what-we-do-home .what-we-do-home, .what-we-do-home .how-can-we-help {
+  padding-top: 90px;
+  font-size: 50px;
 }
 
 .what-we-do-home .what-we-do-home, .what-we-do-home h1 {
@@ -125,6 +105,10 @@ body, html {
   color: white;
   left: 0;
   right: 0;
+}
+
+.what-we-do-home .what-we-do-row {
+  margin-top: -200px;
 }
 
 .what-we-do-home .what-we-do-home, .what-we-do-home h1 {
@@ -168,12 +152,6 @@ body, html {
   .menu-btn {
     display: none;
   }
-  /* Clear floats after the columns */
-  .row:after {
-    content: "";
-    display: table;
-    clear: both;
-  }
   .stewart-image {
     width: auto;
     height: auto;
@@ -211,6 +189,7 @@ body, html {
     left: 0;
     right: 0;
   }
+
   .head-image {
     background: url(https://github.com/simplX1/simplXwebsite/blob/master/images/home/notebook-1280538.jpg?raw=true) no-repeat center center fixed;
     background-position: center center;
@@ -308,16 +287,11 @@ body, html {
     display: table;
     clear: both;
   }
+
 }
 
 @media only screen and (min-width: 646px) {
   .banner {
-    background: url(https://github.com/simplX1/simplXwebsite/blob/master/images/home/notebook-1280538.jpg?raw=true) no-repeat center center fixed;
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
-    height: 500px;
     display: -webkit-inline-box;
     display: -ms-inline-flexbox;
     display: inline-flex;

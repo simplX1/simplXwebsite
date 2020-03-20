@@ -72,31 +72,8 @@ body, html{
   width: 40%;
 }
 
-.head-image
-  {
-    margin-top: -10px;
-    background:  url(https://github.com/simplX1/simplXwebsite/blob/master/images/home/notebook-1280538.jpg?raw=true) no-repeat center center fixed;
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
-    height:500px;
-    width: 100%;
-    
-    .head-image,h2{
-      text-align: center;
-      font-size: 30px;
-      padding-top: 40%;
-      color:white;
-    }
-}
 
-/* Clear floats after the columns */
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
+
 
 .site-info{
   text-align: center;
@@ -116,8 +93,12 @@ body, html{
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
-  height:1900px;
+  height:1000px;
   width: 100%;
+  .what-we-do-home, .how-can-we-help{
+    padding-top: 90px;
+    font-size: 50px;
+  }
 
   .what-we-do-home,h1{
     position: absolute;
@@ -141,7 +122,9 @@ body, html{
     left: 0;
     right: 0;  
 }
-
+.what-we-do-row{
+  margin-top: -200px;
+}
 
   .what-we-do-home,h1{
     text-align: center;
@@ -194,22 +177,8 @@ body, html{
     //hides the hamburger icon ---------------
     .menu-btn{
         display: none;
-    }
-    
-   
+    }          
 
-
-
-
-
-
-          
-          /* Clear floats after the columns */
-          .row:after {
-            content: "";
-            display: table;
-            clear: both;
-          }
     //-----------------
     //header menu------------------
    
@@ -261,24 +230,7 @@ body, html{
     left: 0;
     right: 0;      
 }
-  .head-image
-  {
-    //margin-top: 70px;
-    background:  url(https://github.com/simplX1/simplXwebsite/blob/master/images/home/notebook-1280538.jpg?raw=true) no-repeat center center fixed;
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
-    height:500px;
-    width: 100%;
-    h1{
-        color: white;
-        padding-top: 500px;
-    }
-    .head-image,h2{
-        padding-top: 200px;
-      color: white;
-    }
+ 
 }
 .site-info{
   text-align: center;
@@ -291,13 +243,6 @@ body, html{
 }
 
 .what-we-do-home{
-  background:  url(https://github.com/simplX1/simplXwebsite/blob/master/images/home/cup-of-coffee-1280537.jpg?raw=true) no-repeat center center fixed;
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
-    height:1000px;
-    width: 100%;
 
     .what-we-do-home,h1{
       text-align: center;
@@ -380,25 +325,10 @@ body, html{
 }
 
 
-
-
-  
-  
-
-
-
-}
 //this is used for larger screen sizes 
 @media only screen and (min-width: 646px){
   //hides the hamburger icon ---------------
-
   .banner{
-    background: url(https://github.com/simplX1/simplXwebsite/blob/master/images/home/notebook-1280538.jpg?raw=true) no-repeat center center fixed;
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
-    height: 500px;
     display: inline-flex;
     width: 100%;
       .banner, h1{
@@ -407,8 +337,6 @@ body, html{
         vertical-align: middle;
         margin: auto;
         font-size: 80px;
-        
-        
       }
   }
 
