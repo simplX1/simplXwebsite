@@ -12,7 +12,8 @@ body, html{
 
 //------------------------------------
 .banner{
-  background: url(https://github.com/simplX1/simplXwebsite/blob/master/images/home/notebook-1280538.jpg?raw=true) no-repeat center center fixed;
+  
+  background: url("../../images/home/programming-1873854.png") no-repeat center center fixed;
   background-position: center center;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -83,12 +84,15 @@ body, html{
     color: black;
     font-size: 20px;
   }
+  .site-info, h2{
+    font-size: 50px;
+  }
 }
 
 
 .what-we-do-home{
                 
-  background:  url(https://github.com/simplX1/simplXwebsite/blob/master/images/home/cup-of-coffee-1280537.jpg?raw=true) no-repeat center center fixed;
+  background:  url(https://github.com/simplX1/simplXwebsite/blob/master/images/home/notebook-1280538.jpg?raw=true) no-repeat center center fixed;
   background-position: center center;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -106,7 +110,7 @@ body, html{
     margin-left: auto;
     margin-right: auto;
     font-size: 80px;
-    color: black;
+    color: white;
     left: 0;
     right: 0;      
 }
