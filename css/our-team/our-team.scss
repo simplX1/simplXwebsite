@@ -10,7 +10,7 @@ body, html{
   }
 
   .banner{
-    background: url(https://github.com/simplX1/simplXwebsite/blob/master/images/home/notebook-1280538.jpg?raw=true) no-repeat center center fixed;
+    background: url("../../images/our-team/people-2569234.jpg") no-repeat center center fixed;
     background-position: center center;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -34,24 +34,6 @@ body, html{
 //-------------------------------------------
 
 //position: relative;
-.head-image
-  {
-    margin-top: -25px;
-    background:  url(https://github.com/simplX1/simplXwebsite/blob/master/images/home/notebook-1280538.jpg?raw=true) no-repeat center center fixed;
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
-    height:500px;
-    width: 100%;
-    
-    .head-image,h1{
-      text-align: center;
-      font-size: 38px;
-      padding-top: 50%;
-      color:white;
-    }
-}
 
     .column-name{
         //position: absolute;
@@ -185,12 +167,7 @@ body, html{
 }
   .head-image
   {
-    margin-top: -38px;
-    background:  url(https://github.com/simplX1/simplXwebsite/blob/master/images/home/notebook-1280538.jpg?raw=true) no-repeat center center fixed;
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
+    
     height:500px;
     width: 100%;
     h1{
@@ -209,11 +186,7 @@ body, html{
   //hides the hamburger icon ---------------
 
   .banner{
-    background: url(https://github.com/simplX1/simplXwebsite/blob/master/images/home/notebook-1280538.jpg?raw=true) no-repeat center center fixed;
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
+    
     height: 500px;
     display: inline-flex;
     width: 100%;

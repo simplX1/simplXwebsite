@@ -6,7 +6,7 @@ body, html {
 }
 
 .banner {
-  background: url(https://github.com/simplX1/simplXwebsite/blob/master/images/home/notebook-1280538.jpg?raw=true) no-repeat center center fixed;
+  background: url("../../images/our-team/people-2569234.jpg") no-repeat center center fixed;
   background-position: center center;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -24,24 +24,6 @@ body, html {
   vertical-align: middle;
   margin: auto;
   font-size: 40px;
-}
-
-.head-image {
-  margin-top: -25px;
-  background: url(https://github.com/simplX1/simplXwebsite/blob/master/images/home/notebook-1280538.jpg?raw=true) no-repeat center center fixed;
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
-  height: 500px;
-  width: 100%;
-}
-
-.head-image .head-image, .head-image h1 {
-  text-align: center;
-  font-size: 38px;
-  padding-top: 50%;
-  color: white;
 }
 
 .column-name {
@@ -146,12 +128,6 @@ body, html {
     right: 0;
   }
   .head-image {
-    margin-top: -38px;
-    background: url(https://github.com/simplX1/simplXwebsite/blob/master/images/home/notebook-1280538.jpg?raw=true) no-repeat center center fixed;
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
     height: 500px;
     width: 100%;
   }
@@ -163,11 +139,6 @@ body, html {
 
 @media only screen and (min-width: 646px) {
   .banner {
-    background: url(https://github.com/simplX1/simplXwebsite/blob/master/images/home/notebook-1280538.jpg?raw=true) no-repeat center center fixed;
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
     height: 500px;
     display: -webkit-inline-box;
     display: -ms-inline-flexbox;
