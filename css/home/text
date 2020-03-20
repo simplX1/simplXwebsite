@@ -72,31 +72,8 @@ body, html{
   width: 40%;
 }
 
-.head-image
-  {
-    margin-top: -10px;
-    background:  url(https://github.com/simplX1/simplXwebsite/blob/master/images/home/notebook-1280538.jpg?raw=true) no-repeat center center fixed;
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
-    height:500px;
-    width: 100%;
-    
-    .head-image,h2{
-      text-align: center;
-      font-size: 30px;
-      padding-top: 40%;
-      color:white;
-    }
-}
 
-/* Clear floats after the columns */
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
+
 
 .site-info{
   text-align: center;
@@ -111,7 +88,7 @@ body, html{
 
 .what-we-do-home{
                 
-  background:  url(https://github.com/simplX1/simplXwebsite/blob/master/images/home/cup-of-coffee-1280537.jpg?raw=true) no-repeat center center fixed;
+  background:  url("../../images/home/desktop-2325627.jpg") no-repeat center center fixed;
   background-position: center center;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -157,7 +134,7 @@ body, html{
     .what-we-do-home,h2
     {
       width: 80%;
-      color: white;
+      color: black;
       font-size: 30px;
       font-weight: bold;
       margin-top: -5px;
@@ -165,7 +142,7 @@ body, html{
     .what-we-do-home,p
     {
       width: 80%;
-      color: white;
+      color: black;
       font-size: 13;
       font-weight: bold;
       margin-left: 10%;
@@ -291,13 +268,14 @@ body, html{
 }
 
 .what-we-do-home{
-  background:  url(https://github.com/simplX1/simplXwebsite/blob/master/images/home/cup-of-coffee-1280537.jpg?raw=true) no-repeat center center fixed;
+  background:  url("../../images/home/desktop-2325627.jpg") no-repeat center center fixed;
     background-position: center center;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
     height:1000px;
     width: 100%;
+    opacity: 0.9;
 
     .what-we-do-home,h1{
       text-align: center;
