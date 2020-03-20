@@ -26,16 +26,6 @@ body, html {
   font-size: 40px;
 }
 
-.column-name {
-  text-align: center;
-  margin-left: auto;
-  margin-right: auto;
-  font-size: 80px;
-  color: black;
-  left: 0;
-  right: 0;
-}
-
 .column {
   float: left;
 }
@@ -126,14 +116,6 @@ body, html {
     color: black;
     left: 0;
     right: 0;
-  }
-  .head-image {
-    height: 500px;
-    width: 100%;
-  }
-  .head-image h1 {
-    color: white;
-    padding-top: 12%;
   }
 }
 
