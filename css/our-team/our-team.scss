@@ -9,6 +9,7 @@ body, html{
     padding:0;
   }
 
+  //banner----------------------
   .banner{
     background: url("../../images/our-team/people-2569234.jpg") no-repeat center center fixed;
     background-position: center center;
@@ -28,6 +29,7 @@ body, html{
         
       }
   }
+  //banner----------------------
 
 
 
@@ -35,21 +37,12 @@ body, html{
 
 //position: relative;
 
-    .column-name{
-        //position: absolute;
-        text-align: center;
-        margin-left: auto;
-        margin-right: auto;
-        font-size: 80px;
-        color: black;
-        left: 0;
-        right: 0;      
-    }
+  
 
     
     
 
-
+//Defines column sizes
 
 .column {
     float: left;
@@ -75,6 +68,11 @@ body, html{
     display: table;
     clear: both;
   }
+
+  //Defines column sizes
+
+  //Defines image sizes
+
 .stewart-image{
     width: 400px;
     height: auto;
@@ -83,6 +81,7 @@ body, html{
         width: 300px;
         height: auto;
 }
+  //Defines image sizes
 
 .column1 {
   margin-top: -95px;
@@ -120,10 +119,15 @@ body, html{
     //---------------------------------------------
     //Columns
 
+  //Defines image sizes----------
+
     .stewart-image{
         width: auto;
         height: auto;
     }
+
+      //Defines image sizes-----------
+
         .container{
             .text{
                 margin-left: 10%;
@@ -133,6 +137,9 @@ body, html{
         }
 
         /* Create three unequal columns that floats next to each other */
+
+          //Defines column sizes-------------
+
 .column {
     margin-top: 1px;
     float: left;
@@ -154,6 +161,7 @@ body, html{
     display: table;
     clear: both;
   }
+          //Defines column sizes-------------
 
   .column-name{
     //position: absolute;
@@ -165,16 +173,7 @@ body, html{
     left: 0;
     right: 0;      
 }
-  .head-image
-  {
-    
-    height:500px;
-    width: 100%;
-    h1{
-        color: white;
-        padding-top: 12%;
-    }
-}
+  
   
   
 
@@ -185,6 +184,10 @@ body, html{
 @media only screen and (min-width: 646px){
   //hides the hamburger icon ---------------
 
+
+  //Banner for screen size medium
+
+  
   .banner{
     
     height: 500px;
