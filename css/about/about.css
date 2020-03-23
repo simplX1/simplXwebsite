@@ -9,7 +9,7 @@ body, html {
   background: url("../../images/about/light-918450.jpg") no-repeat center center fixed;
   background-position: center center;
   background-repeat: no-repeat;
-  background-attachment: fixed;
+  background-attachment: scroll;
   background-size: cover;
   height: 500px;
   display: -webkit-inline-box;
@@ -144,6 +144,12 @@ body, html {
     vertical-align: middle;
     margin: auto;
     font-size: 80px;
+  }
+}
+
+@media only screen and (min-width: 1064px) {
+  .banner {
+    background-attachment: fixed;
   }
 }
 /*# sourceMappingURL=about.css.map */

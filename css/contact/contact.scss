@@ -16,7 +16,7 @@ body, html{
   background: url("../../images/contact/handshake-4040911.jpg") no-repeat center center fixed;
   background-position: top top;
   background-repeat: no-repeat;
-  background-attachment: fixed;
+  background-attachment: scroll;
   background-size: cover;
   height: 500px;
   display: inline-flex;
@@ -225,7 +225,13 @@ form {
   display: table;
   clear: both;
 }
+@media only screen and (min-width: 1064px){
+  //hides the hamburger icon ---------------
 
+  .banner{
+    background-attachment: fixed;
+  }
+}
 
 //this is used for larger screen sizes 
 @media only screen and (min-width: 1494px){

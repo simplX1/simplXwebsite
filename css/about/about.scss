@@ -11,7 +11,7 @@ body, html{
   background: url("../../images/about/light-918450.jpg") no-repeat center center fixed;
   background-position: center center;
   background-repeat: no-repeat;
-  background-attachment: fixed;
+  background-attachment: scroll;
   background-size: cover;
   height: 500px;
   display: inline-flex;
@@ -128,4 +128,11 @@ body, html{
         }
     }
     //--------------------
+    }
+    @media only screen and (min-width: 1064px){
+      //hides the hamburger icon ---------------
+    
+      .banner{
+        background-attachment: fixed;
+      }
     }
