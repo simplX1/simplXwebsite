@@ -9,6 +9,10 @@ li, a{
     color: black;
     text-decoration: none;
 }
+li:hover
+{
+    cursor: pointer;
+}
 header{
     
     text-align: center;

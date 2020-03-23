@@ -7,6 +7,10 @@ li, a {
   text-decoration: none;
 }
 
+li:hover {
+  cursor: pointer;
+}
+
 header {
   text-align: center;
   padding: 30px;
