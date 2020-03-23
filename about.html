@@ -7,10 +7,9 @@
     <title>Our Team</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' type='text/css' media='screen' href='css/about/about.css'>
+    <!-- Used to make calls for the header and footer html and scss -->
     <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
-
-        <!-- Initializes header and footer -->
-
+    <!-- Initializes header and footer -->
     <script>
         $(function () {
             $("#header").load("header.html");
@@ -19,8 +18,7 @@
             $("#footer").load("footer.html");
         });
     </script>
-
-            <!-- Initializes header and footer -->
+    <!------------------------------>
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-159549600-1"></script>
@@ -31,29 +29,24 @@
 
         gtag('config', 'UA-159549600-1');
     </script>
+    <!------------------>
 </head>
-
 <body>
-
-            <!-- Calls the header -->
-
+    <!-- implements header html and scss -->
     <div id="header">
 
     </div>
-            <!-- Calls the header -->
+  <!---------------->
 
+  <!-- implements the banner image and title -->
     <section class="container">
-            <!-- Calls the banner -->
-
         <section class="banner">
             <h1>About Us</h1>
         </section>
-            <!-- Calls the banner -->
-
     </section>
+    <!------------------->
 
-                <!-- Displays info about us -->
-
+    <!-- implements the about us information -->
     <section class="cotainer1">
         <div class="about-us">
             <p>SimplX is a new business that was formed at the beginning of 2020 by two
@@ -70,11 +63,10 @@
                 we offer are done in an effective and timely manner.</p>
         </div>
     </section>
-                <!-- Displays info about us -->
+    <!------------->
 
     <!-- Slideshow container -->
     <div class="slideshow-container">
-
         <!-- Full-width images with number and caption text -->
         <div class="mySlides fade">
             <div class="numbertext">1 / 5</div>
@@ -92,7 +84,6 @@
             <img src="images/about/Cart.jpg" style="width:100%">
             <div class="text">BulletFronts Selection Of Bullets</div>
         </div>
-
         <div class="mySlides fade">
             <div class="numbertext">4 / 5</div>
             <img src="images/about/Bulletfront Home.jpg" style="width:100%">
@@ -107,9 +98,10 @@
 
         <!-- Next and previous buttons -->
     </div>
+    <!----------------------->
     <br>
 
-    <!-- The dots/circles -->
+    <!-- The dots/circles for the slide show -->
     <div style="text-align:center; padding-bottom: 20px;">
         <span class="dot" onclick="currentSlide(1)"></span>
         <span class="dot" onclick="currentSlide(2)"></span>
@@ -117,19 +109,16 @@
         <span class="dot" onclick="currentSlide(4)"></span>
         <span class="dot" onclick="currentSlide(5)"></span>
     </div>
-
-
+    <!-- implements the footer html and scss-->
     <div id="footer">
 
     </div>
+    <!------------>
 
-
-    <!--this will make the hamburger icon active and the x button active when clicked -->
-    <script>
-        //for slide show
+    <!-- runs the script for the slide show to go and show each image after a cetain time whish is set-->
+    <script> 
         var slideIndex = 0;
         showSlides();
-
         function showSlides() {
             var i;
             var slides = document.getElementsByClassName("mySlides");
@@ -146,12 +135,7 @@
             dots[slideIndex - 1].className += " active";
             setTimeout(showSlides, 2000); // Change image every 2 seconds
         }
-
-
-
-
     </script>
-    <!---->
+    <!----------------------->
 </body>
-
 </html>

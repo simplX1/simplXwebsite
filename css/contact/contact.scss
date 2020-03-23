@@ -1,13 +1,17 @@
-//fix issue with header on desktop and the size of the div
 
+//implements the font 
 @import url('https://fonts.googleapis.com/css?family=Prompt&display=swap');
-body, html{
+//---------------
 
+//global for body and html
+body, html{
     font-family: 'Prompt', sans-serif;
     margin: 0;
     padding:0;
-    
   }
+//---------------------
+
+//for the banner and the heading and image
 .banner{
   background: url("../../images/contact/handshake-4040911.jpg") no-repeat center center fixed;
   background-position: top top;
@@ -22,28 +26,24 @@ body, html{
       color: white;
       vertical-align: middle;
       margin: auto;
-      font-size: 40px;
-      
-      
+      font-size: 40px;      
     }
 }
 
+//----------------------
 
+//for the contact us area where the text is that explain to the user what to do
 .container2, .contact-us{
     text-align: center;
     margin-left: 7%;
     margin-right: 7%;
 }
+//----------------------------
 
+//for the form and its inputs
 form {
-   // display: inline-block;
-   //margin-top: 50px;
-   // width: 270px;
-   // padding: 19px;
-   //gets this to center for us
    max-width: 420px;
    margin: auto;
-  // background: #2196f3;
   }
   .inputs .block {
     padding-left: 5px;
@@ -54,7 +54,6 @@ form {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     float:left;
   }
-  
   .inputs .block .firstNameInput {
     margin-bottom: 20px;
     margin-top: 5px;
@@ -74,7 +73,6 @@ form {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     float:left;
   }
-  
   .inputs .block .lastNameInput {
     margin-bottom: 20px;
     margin-top: 5px;
@@ -94,7 +92,6 @@ form {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     float:left;
   }
-  
   .inputs .block .emailAddressInput {
     margin-bottom: 20px;
     margin-top: 5px;
@@ -114,7 +111,6 @@ form {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     float:left;
   }
-  
   .inputs .block .contactNumberInput {
     margin-bottom: 20px;
     margin-top: 5px;
@@ -129,13 +125,11 @@ form {
     border: 1px solid #cccccc;
     border-radius: 0;
   }
-
   .inputs .block .messageLabel {
     color: black;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     float:left;
   }
-  
   .inputs .block .messageInput {
     margin-bottom: 20px;
     margin-top: 5px;
@@ -160,7 +154,6 @@ form {
   .inputs .block1 {
     text-align: center;
   }
-  
   .inputs .submit {
     box-shadow:inset 0px 1px 0px 0px #ffffff;
     background:linear-gradient(to bottom, #ffffff 5%, #f6f6f6 100%);
@@ -177,33 +170,40 @@ form {
     text-decoration:none;
     text-shadow:0px 1px 0px #ffffff;
   }
-  
   .inputs .submit:hover {
     background:linear-gradient(to bottom, #f6f6f6 5%, #ffffff 100%);
     background-color:#f6f6f6;
   }
-  
 .inputs .submit:active{
   position:relative;
-	top:1px;
+  top:1px;
 }
+//-----------------------------------------------------------------------------------
+//for the submit button
 .block1{
     width:100%;
     text-align: center;
 }
+//----------------------
+
+//for the google maps system
 .column2{
   width: 50%;
   text-align: center;
 }
   .column2, iframe{
-
     width:250px;
     height:300px;
     margin: 0 auto; 
-    border-style: 0;
-   
-  
+    border-style: 0;  
   }
+  .container4{
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+//-----------------------------
+
+  //for the form
   .column01 {
     font-size: 15px;
     text-align: Left;
@@ -216,45 +216,31 @@ form {
   padding-left: 10px;
   padding-right: 20px;
 }
-.container4{
-  padding-top: 30px;
-  padding-bottom: 30px;
-}
+//------------------
 
-/* Clear floats after the columns */
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
 .row:after {
   content: "";
   display: table;
   clear: both;
 }
 
-.foot
-  {
-    background:  url(https://github.com/simplX1/simplXwebsite/blob/master/images/footer/footer-image.jpg?raw=true) no-repeat center center fixed;
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
-    height:200px;
-    width: 100%;
-    margin-top: 80px;
-    
-}
 
 //this is used for larger screen sizes 
 @media only screen and (min-width: 1494px){
-    //hides the hamburger icon ---------------
+    //hides the hamburger icon--------------------------------
     .menu-btn{
         display: none;
     }
-    //-----------------
-    //header menu------------------
 
-    //---------------------------------------------
-form{
-  padding-top: 80px;
-}
+    // for the form
+    form{
+     padding-top: 80px;
+    }
+//------------------------
 
+//for the banner text
     .container .banner h1
     {
         font-size:100px;
@@ -274,7 +260,13 @@ form{
     .inputs .block .messageInput{
         width:510px;
     }
+    //----------------------------
 
+    //for the contact our team area
+    .row0{
+     
+      margin-bottom: 300px;
+  }
     .container2{
         text-align: center;
         
@@ -292,35 +284,25 @@ form{
       width: 49%;
       text-align: center;
     }
+    //--------------------------
+
+    //google maps system
     .container4{
       width: 73%;
       float: right;
-      
       margin-top: -550px;
     }
     .column2, iframe{
-        //width: 700px;
-        height: 400px;
-        
-   // float: right;
-   // text-align: center;
-  //  max-width: 420px;
-   margin: auto;
-   // padding: 10px;
-   
+    height: 400px;
+    margin: auto;
     }
-    .row0{
-     
-        margin-bottom: 300px;
-    }
-
+    //--------------------
 
     
     }
     @media only screen and (min-width: 646px){
-      
+      //banner
         .banner{
-          
           height: 500px;
           display: inline-flex;
           width: 100%;
@@ -329,19 +311,12 @@ form{
               color: white;
               vertical-align: middle;
               margin: auto;
-              font-size: 80px;
-              
-              
+              font-size: 80px;    
             }
         }
+        //form
       .row2{
         display: flex;
-      }
-      .column2, iframe{
-        //width: 800px;
-        //height: 400px;
-        min-width: 600px;
-        min-height: 300px;
       }
       .inputs .block .firstNameInput{
         width:200px;
@@ -355,4 +330,12 @@ form{
  .inputs .block .messageInput{
   width:400px;
 }
+      //----------------
+
+      //google maps
+      .column2, iframe{
+        min-width: 600px;
+        min-height: 300px;
+      }
+      //-----------
     }
