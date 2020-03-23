@@ -51,7 +51,7 @@ body, html{
   background:  url("../../images/home/notebook-1280538.jpg") no-repeat center center fixed;
     background-position: center center;
     background-repeat: no-repeat;
-    background-attachment: fixed;
+    background-attachment: scroll;
     background-size: cover;
   height:1850px;
   width: 100%;
@@ -154,6 +154,12 @@ text-align: center;
 
 //this is used for larger screen sizes 
 @media only screen and (min-width: 1064px){
+  .banner{
+    background-attachment: fixed;
+  }
+  .what-we-do-home{
+    background-attachment: fixed;
+  }
     //hides the hamburger icon ---------------
     .menu-btn{
         display: none;
