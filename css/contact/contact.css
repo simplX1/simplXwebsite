@@ -205,6 +205,11 @@ form {
   border-style: 0;
 }
 
+.container4 {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
 .column01 {
   font-size: 15px;
   text-align: Left;
@@ -219,27 +224,10 @@ form {
   padding-right: 20px;
 }
 
-.container4 {
-  padding-top: 30px;
-  padding-bottom: 30px;
-}
-
-/* Clear floats after the columns */
 .row:after {
   content: "";
   display: table;
   clear: both;
-}
-
-.foot {
-  background: url(https://github.com/simplX1/simplXwebsite/blob/master/images/footer/footer-image.jpg?raw=true) no-repeat center center fixed;
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
-  height: 200px;
-  width: 100%;
-  margin-top: 80px;
 }
 
 @media only screen and (min-width: 1494px) {
@@ -269,6 +257,9 @@ form {
   .inputs .block .messageInput {
     width: 510px;
   }
+  .row0 {
+    margin-bottom: 300px;
+  }
   .container2 {
     text-align: center;
   }
@@ -293,9 +284,6 @@ form {
     height: 400px;
     margin: auto;
   }
-  .row0 {
-    margin-bottom: 300px;
-  }
 }
 
 @media only screen and (min-width: 646px) {
@@ -318,10 +306,6 @@ form {
     display: -ms-flexbox;
     display: flex;
   }
-  .column2, iframe {
-    min-width: 600px;
-    min-height: 300px;
-  }
   .inputs .block .firstNameInput {
     width: 200px;
   }
@@ -333,6 +317,10 @@ form {
   }
   .inputs .block .messageInput {
     width: 400px;
+  }
+  .column2, iframe {
+    min-width: 600px;
+    min-height: 300px;
   }
 }
 /*# sourceMappingURL=contact.css.map */
