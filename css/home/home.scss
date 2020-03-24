@@ -26,10 +26,26 @@ body, html{
       vertical-align: middle;
       margin: auto;
       font-size: 40px;
-      
+      animation: banner-h1 3s 1;
       
     }
     
+}
+@keyframes banner-h1{
+
+  0%{
+    color: black;
+    margin-bottom: -40px;
+  }
+  30%{
+    letter-spacing: 25px;
+    margin-bottom: -40px;
+  }
+  85%{
+    letter-spacing:8px;
+    margin-bottom: -40px;
+  }
+
 }
 // Ebd Banner ------------------------------------
 
