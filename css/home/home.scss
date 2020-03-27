@@ -20,7 +20,7 @@ body, html{
   height: 500px;
   display: inline-flex;
   width: 100%;
-    .banner, h1{
+    .banner, .content ,h1{
       text-align: center;
       color: white;
       vertical-align: middle;
@@ -29,24 +29,107 @@ body, html{
       animation: banner-h1 3s 1;
       
     }
+  }
+    .test{
+      width: 100%;
+      background-color:#2D3142;;
+      height: 500px;
+      font-family: 'Raleway', sans-serif;
+    }
+      /* Sixth Button */
+      .button {
+        display: inline-flex;
+        height: 40px;
+        width: 150px;
+        border: 2px solid #BFC0C0;
+        margin: 20px 20px 20px 20px;
+        color: #BFC0C0;
+        text-transform: uppercase;
+        text-decoration: none;
+        font-size: .8em;
+        letter-spacing: 1.5px;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+      }
+      
+      a {
+        color: #BFC0C0;
+        text-decoration: none;
+        letter-spacing: 1px;
+      }
+#button-6 {
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+#button-6 a {
+  position: relative;
+  transition: all .45s ease-Out;
+}
+
+#spin {
+  width: 0;
+  height: 0;
+  opacity: 0;
+  left: 70px;
+  top: 20px;
+  transform: rotate(0deg);
+  background: none;
+  position: absolute;
+  transition: all .5s ease-Out;
+}
+
+#button-6:hover #spin {
+  width: 200%;
+  height: 500%;
+  opacity: 1;
+  left: -70px;
+  top: -70px;
+  background: #BFC0C0;
+  transform: rotate(80deg);
+}
+
+#button-6:hover a {
+  color: #2D3142;
+}
+
     
-}
-@keyframes banner-h1{
+    .contact-us {
+      background-color:#193ffc;
+      -webkit-border-top-left-radius:28px;
+      -moz-border-radius-topleft:28px;
+      border-top-left-radius:28px;
+      -webkit-border-top-right-radius:28px;
+      -moz-border-radius-topright:28px;
+      border-top-right-radius:28px;
+      -webkit-border-bottom-right-radius:28px;
+      -moz-border-radius-bottomright:28px;
+      border-bottom-right-radius:28px;
+      -webkit-border-bottom-left-radius:28px;
+      -moz-border-radius-bottomleft:28px;
+      border-bottom-left-radius:28px;
+    text-indent:0;
+      border:1px solid #18ab29;
+      display:inline-block;
+      color:#ffffff;
+      font-family:arial;
+      font-size:15px;
+      font-weight:bold;
+      font-style:normal;
+    height:50px;
+      line-height:50px;
+    width:140px;
+      text-decoration:none;
+      text-align:center;
+      text-shadow:0px 1px 0px #2f6627;
+    }.contact-us:hover {
+      background-color:#5cbf2a;
+    }
+    
 
-  0%{
-    color: black;
-    margin-bottom: -40px;
-  }
-  30%{
-    letter-spacing: 25px;
-    margin-bottom: -40px;
-  }
-  85%{
-    letter-spacing:8px;
-    margin-bottom: -40px;
-  }
 
-}
 // Ebd Banner ------------------------------------
 
 // Page info ------------------------------------
