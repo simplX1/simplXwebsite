@@ -157,6 +157,78 @@ text-align: center;
   .banner{
     background-attachment: fixed;
   }
+.BenefitsOfWebsite{
+  margin-top: -30px;
+  background:  white; 
+  background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: cover;
+  
+  .BenefitsOfWebsite,h1{
+    color: black;;
+    padding-top: 45px;
+    text-align: center;
+    font-size: 30px;
+  }
+
+  .BenefitsOfWebsite,p{
+    color: black;
+    font-size: 20px;
+    padding-top: 0px;
+    padding-left: 10%;
+    text-align: center;
+    width: 80%;
+  }
+}
+.columnsbackground
+{
+  background:  url("../../images/home/wood-2045379.jpg") no-repeat center center fixed;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: cover;
+  height:auto;
+  
+}
+
+  .AdvantagesColumn {
+    float: left;
+    padding-top: 15px;
+    text-align: center;
+    width: 50%;
+
+    .AdvantagesColumn,p{
+      color: white;
+      font-size: 20px;
+      padding-top: 0px;
+      padding-left: 20%;
+      text-align: center;
+      width: 100%;
+    }
+    .AdvantagesParagraph,h2{
+      color: white;
+      
+    }
+    .AdvantagesParagraph,li{
+      color: white;      
+    }
+    .AdvantagesColumn,.AdvantagesParagraph{
+      color: white;
+      font-size: 20px;
+      padding-top: 0px;
+      padding-left: 15%;
+      text-align: left;
+      width: 500px;
+    }
+  }
+  
+  /* Clear floats after the columns */
+  .AdvantagesRow:after {
+    content: "";
+    display: table;
+    clear: both;
+  } 
   .what-we-do-home{
     background-attachment: fixed;
   }
