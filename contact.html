@@ -1,5 +1,6 @@
 <DOCTYPE html>
 <html>
+    <script src='https://www.google.com/recaptcha/api.js' async defer></script>
 
 <head>
     <meta charset='utf-8'>
@@ -8,6 +9,7 @@
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' type='text/css' media='screen' href='css/contact/contact.css'>
     <!-- Used to make calls for the header and footer html and scss -->
+    
     <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
     <script>
         $(function () {
@@ -86,9 +88,12 @@
                             <label for="message" class="messageLabel">WHAT CAN WE DO FOR YOU?</label>
                             <textarea class="messageInput" id="message" rows="4" name="body" required=""></textarea>
                         </div>
+                        <div class="block2">
+                        <div class="g-recaptcha" data-sitekey="6LcLjfkUAAAAAIBYkq4eGE_aR6ZpaLs1PhWJM87E"></div>
+                    </div>
                         <div class="block1">
                             <button class="submit" type="submit" value="Send">Submit</button>
-                        </div>
+                        </div>             
                     </div>
                 </form>
             </section>
@@ -98,7 +103,7 @@
         <!-- implements the GPS system google maps -->
         <section class="container4">
             <div class="column2">
-                <iframe
+                <iframe id="map"
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3585.1274974130847!2d28.00201031561881!3d-26.0293840632117!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1e9576a660ed8771%3A0x1558e0c57109596a!2s26%20Robin%20Dr%2C%20Fourways%2C%20Sandton%2C%202055!5e0!3m2!1sen!2sza!4v1583924378557!5m2!1sen!2sza"></iframe>
             </div>
         </section>
