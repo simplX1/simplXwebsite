@@ -167,7 +167,7 @@ form {
   border-radius: 6px;
   border: 1px solid #dcdcdc;
   display: inline-block;
-  cursor: pointer;
+  cursor: not-allowed;
   color: #666666;
   font-family: Arial;
   font-size: 15px;
