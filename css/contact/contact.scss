@@ -211,7 +211,7 @@ form {
   }
   .container4{
     padding-top: 30px;
-    padding-bottom: 30px;
+    margin-bottom: 30px;
   }
 //-----------------------------
 
@@ -227,6 +227,9 @@ form {
 .container3{
   padding-left: 10px;
   padding-right: 20px;
+}
+.g-recaptcha{
+  margin-left: -56px;
 }
 //------------------
 
@@ -299,19 +302,14 @@ form {
   
     }
     .column1{
-      width: 49%;
+      //width: 49%;
       text-align: center;
     }
     //--------------------------
 
     //google maps system
-    .container4{
-      width: 73%;
-      float: right;
-      margin-top: -550px;
-    }
     .column2, #map{
-    height: 400px;
+
     margin: auto;
     }
     //--------------------
@@ -353,7 +351,6 @@ form {
       //google maps
       .column2, #map{
         min-width: 600px;
-        min-height: 300px;
       }
       //-----------
     }
