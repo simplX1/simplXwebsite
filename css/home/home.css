@@ -28,8 +28,7 @@ body, html {
           animation: banner-h1 3s 1;
 }
 
-/* Sixth Button */
-.button {
+.contact-us {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
@@ -58,13 +57,13 @@ a {
   letter-spacing: 1px;
 }
 
-#button-6 {
+#contact-us-button {
   position: relative;
   overflow: hidden;
   cursor: pointer;
 }
 
-#button-6 a {
+#contact-us-button a {
   position: relative;
   -webkit-transition: all .45s ease-Out;
   transition: all .45s ease-Out;
@@ -85,7 +84,7 @@ a {
   transition: all .5s ease-Out;
 }
 
-#button-6:hover #spin {
+#contact-us-button:hover #spin {
   width: 200%;
   height: 500%;
   opacity: 1;
@@ -96,7 +95,7 @@ a {
           transform: rotate(80deg);
 }
 
-#button-6:hover a {
+#contact-us-button:hover a {
   color: #2D3142;
 }
 
@@ -128,7 +127,16 @@ a {
 .what-we-do-info-column p {
   display: inline-block;
   text-align: center;
-  max-width: 500px;
+  width: 80%;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.line-separator {
+  width: 100%;
+  background-color: #4b4b4b;
+  height: 15px;
+  border: 0px;
 }
 
 .testimonials h1 {
@@ -170,15 +178,6 @@ a {
   .banner {
     background-attachment: fixed;
   }
-  .menu-btn {
-    display: none;
-  }
-  .container .text {
-    margin-left: 10%;
-    margin-right: 10%;
-    text-align: center;
-  }
-  /* Create three unequal columns that floats next to each other */
   .site-info {
     text-align: center;
     width: 80%;
@@ -201,6 +200,12 @@ a {
 }
 
 @media only screen and (min-width: 646px) {
+  .line-separator {
+    width: 100%;
+    background-color: #4b4b4b;
+    height: 15px;
+    border: 0px;
+  }
   .banner {
     height: 500px;
     display: -webkit-inline-box;
@@ -246,9 +251,10 @@ a {
     padding-left: 100px;
   }
   .line-separator {
-    width: 800px;
-    background-color: darkblue;
-    height: 2px;
+    width: 100%;
+    background-color: #4b4b4b;
+    height: 15px;
+    border: 0px;
   }
 }
 /*# sourceMappingURL=home.css.map */
