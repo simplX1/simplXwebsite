@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Our Team</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='css/about/about.css'>
+    <!-- Used to make calls for the header and footer html and scss -->
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <!-- Initializes header and footer -->
+    <script>
+        $(function () {
+            $("#header").load("header.html");
+        });
+        $(function () {
+            $("#footer").load("footer.html");
+        });
+    </script>
+    <!------------------------------>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-159549600-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-159549600-1');
+    </script>
+    <!------------------>
+</head>
+<body>
+    <!-- implements header html and scss -->
+    <div id="header">
+
+    </div>
+  <!---------------->
+
+  <!-- implements the banner image and title -->
+    <section class="container">
+        <section class="banner">
+            <h1>About Us</h1>
+        </section>
+    </section>
+    <!------------------->
+
+    <!-- implements the about us information -->
+    <section class="cotainer1">
+        <div class="about-us">
+            <p>SimplX is a new business that was formed at the beginning of 2020 by two
+                graduates with Bachelor of Computer and Information Sciences in
+                Application Development degrees. We strive to ensure top notch quality
+                in any project we are involved in and strive to give our customers the
+                service they deserve. We have been involved in various aspects of
+                development over the past 4 years and have undoubtedly produced top
+                quality services and developments. The team has worked together in
+                various different website development and deployment, web applications,
+                desktop applications as well as android applications. The skills offered
+                by our team are one of the best in the industry as we strive to ensure
+                customer satisfaction is met as well as the the products and services
+                we offer are done in an effective and timely manner.</p>
+        </div>
+    </section>
+    <!------------->
+
+    <div class="picture-grid">
+        <div class="grid-box">
+            <a href="https://www.w3schools.com">
+                <img class="image" src="images/about/AC Home.jpg" alt="img1" width="413" height="413">
+                <div class="middle">
+                    <div class="text">Worlds Life</div>
+                </div>
+            </a>
+        </div>
+    </div>
+
+    <!-- Slideshow container -->
+    <div class="slideshow-container">
+        <!-- Full-width images with number and caption text -->
+        <div class="mySlides fade">
+            <div class="numbertext">1 / 5</div>
+            <img src="images/about/AC Contact.jpg" style="width:100%">
+            <div class="text">BulletFront Home</div>
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">2 / 5</div>
+            <img src="images/about/Krucon Home.jpg" style="width:100%">
+            <div class="text">Krucon Home</div>
+        </div>
+        <div class="mySlides fade">
+            <div class="numbertext">3 / 5</div>
+            <img src="images/about/Cart.jpg" style="width:100%">
+            <div class="text">BulletFronts Selection Of Bullets</div>
+        </div>
+        <div class="mySlides fade">
+            <div class="numbertext">4 / 5</div>
+            <img src="images/about/Bulletfront Home.jpg" style="width:100%">
+            <div class="text">Krucon Contact Us</div>
+        </div>
+        <div class="mySlides fade">
+            <div class="numbertext">5 / 5</div>
+            <img src="images/about/Brass.jpg" style="width:100%">
+            <div class="text">What Krucon Can Do</div>
+        </div>
+
+
+        <!-- Next and previous buttons -->
+    </div>
+    <!----------------------->
+    <br>
+
+    <!-- The dots/circles for the slide show -->
+    <div style="text-align:center; padding-bottom: 20px;">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(4)"></span>
+        <span class="dot" onclick="currentSlide(5)"></span>
+    </div>
+    <!-- implements the footer html and scss-->
+    <div id="footer">
+
+    </div>
+    <!------------>
+
+    <!-- runs the script for the slide show to go and show each image after a cetain time whish is set-->
+    <script> 
+        var slideIndex = 0;
+        showSlides();
+        function showSlides() {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("dot");
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) { slideIndex = 1 }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+            setTimeout(showSlides, 2000); // Change image every 2 seconds
+        }
+    </script>
+    <!----------------------->
+</body>
+</html>
+
+
+@import url('https://fonts.googleapis.com/css?family=Prompt&display=swap');
+//global 
+body, html{
+    font-family: 'Prompt', sans-serif;
+    margin: 0;
+    padding:0;
+  }
+  //-----------
+//for the banner image and text
+.banner{
+  background: url("../../images/about/light-918450.jpg") no-repeat center center fixed;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: cover;
+  height: 500px;
+  display: inline-flex;
+  width: 100%;
+.banner, h1{
+      text-align: center;
+      color: white;
+      vertical-align: middle;
+      margin: auto;
+      font-size: 40px;
+    }
+}
+//------------------
+
+//about us 
+ .container1, .about-us{
+    text-align: center;
+    margin-left: 15%;
+    margin-right: 15%;
+    font-size: 20px;
+ }
+//-----------
+
+//slide show
+.slideshow-container {
+  max-width: 1500px;
+  position: relative;
+  margin: auto;
+}
+.mySlides {
+  display: none;
+}
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+.active, .dot:hover {
+  background-color: #717171;
+}
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+//---------------
+.picture-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(413px, 1fr));
+  justify-items: center;
+
+}
+.grid-box{
+  position: relative;
+  text-align: center;
+ 
+}
+
+.grid-box img {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  text-align: center;
+
+}
+.grid-box:hover .image {
+  opacity: 0.3;
+}
+
+.grid-box:hover .middle {
+  opacity: 1;
+}
+.text {
+  font-family: acumin-pro, sans-serif;
+  color: black;
+  font-size: 35px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+//this is used for larger screen sizes 
+@media only screen and (min-width: 646px){
+    //banner image and text
+    .banner{   
+      height: 500px;
+      display: inline-flex;
+      width: 100%;
+        .banner, h1{
+          text-align: center;
+          color: white;
+          vertical-align: middle;
+          margin: auto;
+          font-size: 80px;   
+        }
+    }
+    //--------------------
+    }
+    @media only screen and (min-width: 1064px){
+      //hides the hamburger icon ---------------
+    
+      .banner{
+        background-attachment: fixed;
+      }
+    }

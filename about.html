@@ -64,78 +64,12 @@
         </div>
     </section>
     <!------------->
-
-    <!-- Slideshow container -->
-    <div class="slideshow-container">
-        <!-- Full-width images with number and caption text -->
-        <div class="mySlides fade">
-            <div class="numbertext">1 / 5</div>
-            <img src="images/about/AC Contact.jpg" style="width:100%">
-            <div class="text">BulletFront Home</div>
-        </div>
-
-        <div class="mySlides fade">
-            <div class="numbertext">2 / 5</div>
-            <img src="images/about/Krucon Home.jpg" style="width:100%">
-            <div class="text">Krucon Home</div>
-        </div>
-        <div class="mySlides fade">
-            <div class="numbertext">3 / 5</div>
-            <img src="images/about/Cart.jpg" style="width:100%">
-            <div class="text">BulletFronts Selection Of Bullets</div>
-        </div>
-        <div class="mySlides fade">
-            <div class="numbertext">4 / 5</div>
-            <img src="images/about/Bulletfront Home.jpg" style="width:100%">
-            <div class="text">Krucon Contact Us</div>
-        </div>
-        <div class="mySlides fade">
-            <div class="numbertext">5 / 5</div>
-            <img src="images/about/Brass.jpg" style="width:100%">
-            <div class="text">What Krucon Can Do</div>
-        </div>
-
-
-        <!-- Next and previous buttons -->
-    </div>
-    <!----------------------->
-    <br>
-
-    <!-- The dots/circles for the slide show -->
-    <div style="text-align:center; padding-bottom: 20px;">
-        <span class="dot" onclick="currentSlide(1)"></span>
-        <span class="dot" onclick="currentSlide(2)"></span>
-        <span class="dot" onclick="currentSlide(3)"></span>
-        <span class="dot" onclick="currentSlide(4)"></span>
-        <span class="dot" onclick="currentSlide(5)"></span>
-    </div>
+    
     <!-- implements the footer html and scss-->
     <div id="footer">
 
     </div>
     <!------------>
 
-    <!-- runs the script for the slide show to go and show each image after a cetain time whish is set-->
-    <script> 
-        var slideIndex = 0;
-        showSlides();
-        function showSlides() {
-            var i;
-            var slides = document.getElementsByClassName("mySlides");
-            var dots = document.getElementsByClassName("dot");
-            for (i = 0; i < slides.length; i++) {
-                slides[i].style.display = "none";
-            }
-            slideIndex++;
-            if (slideIndex > slides.length) { slideIndex = 1 }
-            for (i = 0; i < dots.length; i++) {
-                dots[i].className = dots[i].className.replace(" active", "");
-            }
-            slides[slideIndex - 1].style.display = "block";
-            dots[slideIndex - 1].className += " active";
-            setTimeout(showSlides, 2000); // Change image every 2 seconds
-        }
-    </script>
-    <!----------------------->
 </body>
 </html>
