@@ -30,11 +30,14 @@
     <header>
         <img src="images/Hamburger Icon-Black.svg" class="menu-btn" id="open-menu">
        
-        <img class="logo" src="images/simplx-black.png" alt="logo">
+        <a href="index.html"><img class="logo" src="images/simplx-black.png" alt="logo"></a>
         
             <ul class="nav_links">
                 <li>
                     <a onclick="window.location='index.html'">HOME</a>
+                </li>
+                <li>
+                    <a onclick="window.location='projects.html'">WHAT WE'VE CREATED</a>
                 </li>
                 <li>
                     <a onclick="window.location='our-team.html'">OUR TEAM</a>
@@ -56,11 +59,17 @@
         document.getElementById('open-menu').addEventListener('click', function()
         {
             overlay.classList.add('show-menu');
+            //prevents scrolling when overlay is open
+            document.documentElement.style.overflow = 'hidden';
+            document.body.scroll = "no";
             
         });
         document.getElementById('close-menu').addEventListener('click', function()
         {
             overlay.classList.remove('show-menu');
+            //allows scrolling when overlay is closed
+            document.documentElement.style.overflow = 'scroll';
+            document.body.scroll = "yes";
         });
     </script>
 
