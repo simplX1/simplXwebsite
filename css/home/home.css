@@ -57,6 +57,74 @@ a {
   letter-spacing: 1px;
 }
 
+.benefits-of-a-website {
+  background: #202020;
+  text-align: center;
+}
+
+.benefits-of-a-website h2 {
+  text-align: center;
+  padding-top: 50px;
+  color: white;
+  font-size: 25px;
+}
+
+.benefits-of-a-website .site-info, .benefits-of-a-website p {
+  width: 90%;
+  margin-left: 5%;
+  color: white;
+  font-size: 20px;
+  padding-bottom: 50px;
+}
+
+.testimonials {
+  background: #202020;
+}
+
+.testimonials h1 {
+  padding-top: 25px;
+  background: #202020;
+  position: relative;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 30px;
+  color: white;
+}
+
+.testimonials .what-we-do-row-testimonial .testimonial-column p {
+  color: white;
+  text-align: center;
+  padding-right: 10%;
+  padding-left: 10%;
+}
+
+.testimonials .what-we-do-row-testimonial .testimonial-column .image-pos {
+  display: block;
+  margin-top: -65px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.testimonials .testimonial-column h2 {
+  color: white;
+  text-align: center;
+  margin-top: -75px;
+  font-size: 20px;
+}
+
+.testimonials .testimonial-column h3 {
+  color: white;
+  text-align: center;
+  margin-top: -20px;
+  font-size: 20px;
+}
+
+.testimonials .testimonial-column h3 a {
+  color: white;
+}
+
 #contact-us-button {
   position: relative;
   overflow: hidden;
@@ -140,15 +208,18 @@ a {
 }
 
 .testimonials h1 {
+  padding-top: 25px;
+  background: #202020;
   position: relative;
   text-align: center;
   margin-left: auto;
   margin-right: auto;
   font-size: 30px;
-  color: black;
+  color: white;
 }
 
 .testimonials .what-we-do-row-testimonial .testimonial-column p {
+  color: white;
   text-align: center;
   padding-right: 10%;
   padding-left: 10%;
@@ -163,15 +234,21 @@ a {
 }
 
 .testimonials .testimonial-column h2 {
+  color: white;
   text-align: center;
   margin-top: -75px;
   font-size: 20px;
 }
 
 .testimonials .testimonial-column h3 {
+  color: white;
   text-align: center;
   margin-top: -20px;
   font-size: 20px;
+}
+
+.testimonials .testimonial-column h3 a {
+  color: white;
 }
 
 @media only screen and (min-width: 1064px) {
@@ -180,6 +257,21 @@ a {
   }
   .what-we-do-home {
     background-attachment: fixed;
+  }
+  .benefits-of-a-website {
+    background: #202020;
+    text-align: center;
+  }
+  .benefits-of-a-website h2 {
+    text-align: center;
+    padding-top: 50px;
+    color: white;
+    font-size: 35px;
+  }
+  .benefits-of-a-website .site-info, .benefits-of-a-website p {
+    color: white;
+    font-size: 20px;
+    padding-bottom: 50px;
   }
   .menu-btn {
     display: none;
@@ -206,6 +298,8 @@ a {
     font-size: 20px;
   }
   .what-we-do-row-testimonial {
+    margin-top: -20px;
+    background: #202020;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -217,7 +311,7 @@ a {
   }
 }
 
-@media only screen and (min-width: 646px) {
+@media only screen and (min-width: 1064px) and (min-width: 646px) {
   .line-separator {
     width: 100%;
     background-color: #4b4b4b;
@@ -240,7 +334,7 @@ a {
   }
 }
 
-@media only screen and (min-width: 1300px) {
+@media only screen and (min-width: 1064px) and (min-width: 1300px) {
   .what-we-do-home {
     padding-top: 200px;
     margin-top: -200px;
