@@ -240,6 +240,10 @@ a {
   font-size: 20px;
 }
 
+.testimonials {
+  padding-bottom: 30px;
+}
+
 .testimonials .testimonial-column h3 {
   color: white;
   text-align: center;
@@ -272,6 +276,9 @@ a {
     color: white;
     font-size: 20px;
     padding-bottom: 50px;
+  }
+  .testimonials {
+    padding-bottom: 30px;
   }
   .menu-btn {
     display: none;
@@ -361,6 +368,9 @@ a {
     margin-top: -40px;
     padding-right: 100px;
     padding-left: 100px;
+  }
+  .testimonials {
+    padding-bottom: 30px;
   }
   .line-separator {
     width: 100%;
