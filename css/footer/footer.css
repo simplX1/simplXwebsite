@@ -20,6 +20,10 @@ body, html {
   text-align: center;
 }
 
+.footer-align {
+  margin-top: -20px;
+}
+
 /* Clear floats after the columns */
 .footer-row:after {
   content: "";

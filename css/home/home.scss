@@ -49,6 +49,71 @@ body, html{
         text-decoration: none;
         letter-spacing: 1px;
       }
+
+      .benefits-of-a-website
+      {
+        background:	#202020;
+        text-align: center;
+        
+        h2{
+          text-align: center;
+          padding-top: 50px;
+          color: white;
+          font-size: 25px;
+        }
+        .site-info,p{
+          width: 90%;
+          margin-left: 5%;
+          color: white;
+          font-size: 20px;
+          padding-bottom: 50px;
+        }
+      }
+      .testimonials{
+        background: #202020;
+      }
+      .testimonials h1{
+        padding-top: 25px;
+        background: #202020;
+        position: relative;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+        font-size: 30px;
+        color: white;
+      }
+      .testimonials .what-we-do-row-testimonial .testimonial-column  p{
+        color: white;
+        text-align: center;
+        padding-right: 10%;
+        padding-left: 10%;
+      }
+      .testimonials .what-we-do-row-testimonial .testimonial-column .image-pos{
+        display: block;
+        margin-top: -65px;
+        margin-left: auto;
+        margin-right: auto;
+      text-align: center;
+      }
+      .testimonials .testimonial-column h2{
+        color: white;
+      
+        text-align: center;
+        margin-top: -75px;
+        font-size: 20px;
+      }
+      .testimonials .testimonial-column h3{
+        color: white;
+      
+        text-align: center;
+        margin-top: -20px;
+        font-size: 20px;
+        a{
+          color: white;
+        }
+      }
+    
+      
 #contact-us-button {
   position: relative;
   overflow: hidden;
@@ -140,14 +205,17 @@ body, html{
 
 //for the testimonials 
 .testimonials h1{
+  padding-top: 25px;
+  background: #202020;
   position: relative;
   text-align: center;
   margin-left: auto;
   margin-right: auto;
   font-size: 30px;
-  color: black;
+  color: white;
 }
 .testimonials .what-we-do-row-testimonial .testimonial-column  p{
+  color: white;
   text-align: center;
   padding-right: 10%;
   padding-left: 10%;
@@ -160,14 +228,21 @@ body, html{
 text-align: center;
 }
 .testimonials .testimonial-column h2{
+  color: white;
+
   text-align: center;
   margin-top: -75px;
   font-size: 20px;
 }
 .testimonials .testimonial-column h3{
+  color: white;
+
   text-align: center;
   margin-top: -20px;
   font-size: 20px;
+  a{
+    color: white;
+  }
 }
 //------------------------------------
 
@@ -185,6 +260,26 @@ text-align: center;
   .what-we-do-home{
     background-attachment: fixed;
   }
+  
+  .benefits-of-a-website
+  {
+    background:	#202020;
+    text-align: center;
+    
+    h2{
+      text-align: center;
+      padding-top: 50px;
+      color: white;
+      font-size: 35px;
+    }
+    .site-info,p{
+      color: white;
+      font-size: 20px;
+      padding-bottom: 50px;
+    }
+  }
+
+  
     //hides the hamburger icon ---------------
     .menu-btn{
         display: none;
@@ -219,6 +314,7 @@ text-align: center;
 
  //info about the business
 .site-info{
+  
   text-align: center;
   width: 80%;
   margin-left: 10%;
@@ -231,6 +327,8 @@ text-align: center;
 
 //testamonials
 .what-we-do-row-testimonial{
+  margin-top: -20px;
+  background: #202020;
   display: flex;
 }
 // for the testimonials
@@ -239,7 +337,7 @@ text-align: center;
   flex: 50%;
 }
 //--------------
-}
+
 //-------------------
 
 //this is used for larger screen sizes 
@@ -303,4 +401,5 @@ text-align: center;
         border: 0px;
       }
   }
+}
 //-----------------
