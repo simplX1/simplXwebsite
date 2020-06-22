@@ -167,13 +167,14 @@ form {
   border-radius: 6px;
   border: 1px solid #dcdcdc;
   display: inline-block;
-  cursor: pointer;
+  cursor: not-allowed;
   color: #666666;
   font-family: Arial;
   font-size: 15px;
   font-weight: bold;
   padding: 6px 24px;
   text-decoration: none;
+  margin-top: 20px;
   text-shadow: 0px 1px 0px #ffffff;
 }
 
@@ -188,6 +189,15 @@ form {
   top: 1px;
 }
 
+.inputs .block2 {
+  width: 100%;
+  text-align: center;
+}
+
+.inputs .g-recaptcha iframe {
+  margin-left: 20%;
+}
+
 .block1 {
   width: 100%;
   text-align: center;
@@ -198,7 +208,7 @@ form {
   text-align: center;
 }
 
-.column2, iframe {
+.column2, #map {
   width: 250px;
   height: 300px;
   margin: 0 auto;
@@ -207,7 +217,7 @@ form {
 
 .container4 {
   padding-top: 30px;
-  padding-bottom: 30px;
+  margin-bottom: 30px;
 }
 
 .column01 {
@@ -222,6 +232,10 @@ form {
 .container3 {
   padding-left: 10px;
   padding-right: 20px;
+}
+
+.g-recaptcha {
+  margin-left: -56px;
 }
 
 .row:after {
@@ -239,9 +253,6 @@ form {
 @media only screen and (min-width: 1494px) {
   .menu-btn {
     display: none;
-  }
-  form {
-    padding-top: 80px;
   }
   .container .banner h1 {
     font-size: 100px;
@@ -263,9 +274,6 @@ form {
   .inputs .block .messageInput {
     width: 510px;
   }
-  .row0 {
-    margin-bottom: 300px;
-  }
   .container2 {
     text-align: center;
   }
@@ -278,16 +286,9 @@ form {
     position: relative;
   }
   .column1 {
-    width: 49%;
     text-align: center;
   }
-  .container4 {
-    width: 73%;
-    float: right;
-    margin-top: -550px;
-  }
-  .column2, iframe {
-    height: 400px;
+  .column2, #map {
     margin: auto;
   }
 }
@@ -324,9 +325,8 @@ form {
   .inputs .block .messageInput {
     width: 400px;
   }
-  .column2, iframe {
+  .column2, #map {
     min-width: 600px;
-    min-height: 300px;
   }
 }
 /*# sourceMappingURL=contact.css.map */

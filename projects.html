@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>WHAT WE'VE CREATED</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='css/projects/projects.css'>
+    <!-- Used to make calls for the header and footer html and scss -->
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <!-- Initializes header and footer -->
+    <script>
+        $(function () {
+            $("#header").load("header.html");
+        });
+        $(function () {
+            $("#footer").load("footer.html");
+        });
+    </script>
+    <!------------------------------>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-159549600-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-159549600-1');
+    </script>
+    <!------------------>
+</head>
+
+<body>
+    <!-- implements header html and scss -->
+    <div id="header">
+
+    </div>
+    <!---------------->
+
+    <div class="picture-grid">
+        <div class="grid-box">
+            <a href="https://krucon.co.za" target="_blank">
+                <img class="image" src="images/projects/krucon.co.za.jpg" alt="img1" width="413" height="413">
+                <div class="middle">
+                    <div class="text">KruCon</div>
+                </div>
+            </a>
+        </div>
+        <div class="grid-box">
+            <a href="https://expertsunlimited.co.za" target="_blank">
+                <img class="image" src="images/projects/expertsltd.co.za.jpg" alt="img1" width="413" height="413">
+                <div class="middle">
+                    <div class="text">Experts Unlimited</div>
+                </div>
+            </a>
+        </div>
+        <div class="grid-box">
+            <a href="https://shannissiotis.co.za" target="_blank">
+                <img class="image" src="images/projects/shannissiotis.co.za.jpg" alt="img1" width="413" height="413">
+                <div class="middle">
+                    <div class="text">Shan Nissiotis</div>
+                </div>
+            </a>
+        </div>
+        <div class="grid-box">
+            <a href="https://life-force.info" target="_blank">
+                <img class="image" src="images/projects/life-force.info.jpg" alt="img1" width="413" height="413">
+                <div class="middle">
+                    <div class="text">Life Force</div>
+                </div>
+            </a>
+        </div>
+    </div>
+    
+
+    <!-- implements the footer html and scss-->
+    <div id="footer">
+
+    </div>
+    <!------------>
+
+</body>
+
+</html>

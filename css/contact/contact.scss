@@ -153,6 +153,7 @@ form {
   }
   .inputs .block1 {
     text-align: center;
+    
   }
   .inputs .submit {
     box-shadow:inset 0px 1px 0px 0px #ffffff;
@@ -161,13 +162,14 @@ form {
     border-radius:6px;
     border:1px solid #dcdcdc;
     display:inline-block;
-    cursor:pointer;
+    cursor: not-allowed;
     color:#666666;
     font-family:Arial;
     font-size:15px;
     font-weight:bold;
     padding:6px 24px;
     text-decoration:none;
+    margin-top: 20px;
     text-shadow:0px 1px 0px #ffffff;
   }
   .inputs .submit:hover {
@@ -178,6 +180,16 @@ form {
   position:relative;
   top:1px;
 }
+.inputs .block2{
+  width:100%;
+  text-align: center;
+}
+//recaptcha
+.inputs .g-recaptcha iframe{
+    margin-left: 20%;
+ 
+}
+//------------------------------------------------
 //-----------------------------------------------------------------------------------
 //for the submit button
 .block1{
@@ -191,7 +203,7 @@ form {
   width: 50%;
   text-align: center;
 }
-  .column2, iframe{
+  .column2, #map{
     width:250px;
     height:300px;
     margin: 0 auto; 
@@ -199,7 +211,7 @@ form {
   }
   .container4{
     padding-top: 30px;
-    padding-bottom: 30px;
+    margin-bottom: 30px;
   }
 //-----------------------------
 
@@ -215,6 +227,9 @@ form {
 .container3{
   padding-left: 10px;
   padding-right: 20px;
+}
+.g-recaptcha{
+  margin-left: -56px;
 }
 //------------------
 
@@ -238,11 +253,6 @@ form {
     //hides the hamburger icon--------------------------------
     .menu-btn{
         display: none;
-    }
-
-    // for the form
-    form{
-     padding-top: 80px;
     }
 //------------------------
 
@@ -269,10 +279,6 @@ form {
     //----------------------------
 
     //for the contact our team area
-    .row0{
-     
-      margin-bottom: 300px;
-  }
     .container2{
         text-align: center;
         
@@ -287,24 +293,17 @@ form {
   
     }
     .column1{
-      width: 49%;
+      //width: 49%;
       text-align: center;
     }
     //--------------------------
 
     //google maps system
-    .container4{
-      width: 73%;
-      float: right;
-      margin-top: -550px;
-    }
-    .column2, iframe{
-    height: 400px;
+    .column2, #map{
+
     margin: auto;
     }
-    //--------------------
-
-    
+    //-------------------    
     }
     @media only screen and (min-width: 646px){
       //banner
@@ -339,9 +338,8 @@ form {
       //----------------
 
       //google maps
-      .column2, iframe{
+      .column2, #map{
         min-width: 600px;
-        min-height: 300px;
       }
       //-----------
     }
