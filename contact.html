@@ -2,13 +2,27 @@
     <html>
     <script src='https://www.google.com/recaptcha/api.js' async defer></script>
 
-    <head>
-        <meta charset='utf-8'>
-        <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-        <title>Contact Us</title>
-        <meta name='viewport' content='width=device-width, initial-scale=1'>
-        <link rel='stylesheet' type='text/css' media='screen' href='css/contact/contact.css'>
-        <!-- Used to make calls for the header and footer html and scss -->
+
+<head>
+    <link rel="shortcut icon" href="images/SImage.png" type="image/x-icon"/>
+
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Contact Us</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='css/contact/contact.css'>
+    <!-- Used to make calls for the header and footer html and scss -->
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <script>
+        $(function () {
+            $("#header").load("header.html");
+        });
+        $(function () {
+            $("#footer").load("footer.html");
+        });
+    </script>
+    <!----------------------->
+
 
         <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
         <script>
