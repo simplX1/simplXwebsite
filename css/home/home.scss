@@ -257,6 +257,7 @@ text-align: center;
 
 //this is used for larger screen sizes 
 @media only screen and (min-width: 1064px){
+
   //banner
   .banner{
     background-attachment: fixed;
@@ -339,6 +340,7 @@ text-align: center;
   background: #202020;
   display: flex;
 }
+
 // for the testimonials
 
 .testimonial-column{
@@ -350,6 +352,8 @@ text-align: center;
 
 //this is used for larger screen sizes 
 @media only screen and (min-width: 646px){
+
+  
   //Start banner content-------------
   .line-separator{
     width: 100%; 
@@ -375,15 +379,34 @@ text-align: center;
 
 //this is used for larger screen sizes
 @media only screen and (min-width: 1300px) {
+  
   //How can we help you section
   .what-we-do-home{
     padding-top: 200px;
     margin-top: -200px;
-  }  
+  } 
+  .what-we-do-home .what-we-do-header{
+      font-size: 35px;
+
+    }
+  .what-we-do-home, .what-we-do-row, .what-we-do-info-column{
+    h2{
+      font-size: 25px;
+
+    }}
+  .what-we-do-home, .what-we-do-row, .what-we-do-info-column{
+    p{
+      font-size: 20px;
+
+    }
+  }
+
   .what-we-do-home, .what-we-do-header, .what-we-do-row, .what-we-do-info-column{
         box-sizing: border-box;
         text-align: center;
+        
       }
+      
       /* Create three equal columns that floats next to each other */
       .what-we-do-info-column {
         float: left;
@@ -406,6 +429,7 @@ text-align: center;
 {
   padding-bottom: 30px;
 }
+
       .line-separator{
         width: 100%; 
         background-color: #4b4b4b;
