@@ -6,10 +6,11 @@ body, html {
 }
 
 .banner {
-  background: url("../../images/our-team/people-2569234.jpg") no-repeat center center fixed;
+  background: url("../../images/our-team/radek-grzybowski-eBRTYyjwpRY-unsplash.jpg") no-repeat center center fixed;
   background-position: center center;
   background-repeat: no-repeat;
   background-attachment: scroll;
+  position: scroll;
   background-size: cover;
   height: 500px;
   display: -webkit-inline-box;
@@ -26,84 +27,28 @@ body, html {
   font-size: 40px;
 }
 
+.strenghts {
+  height: 100%;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
 .column {
-  float: left;
-}
-
-.left, .right {
-  text-align: center;
   width: 100%;
-}
-
-.left .left, .left p, .right .left, .right p {
-  font-size: 50px;
-}
-
-.middle {
-  margin-left: 10%;
   text-align: center;
-  width: 80%;
+  font-size: 20px;
 }
 
-/* Clear floats after the columns */
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
+img {
+  width: 100px;
 }
 
-.stewart-image {
-  width: 400px;
-  height: auto;
-}
-
-.donovan-image {
-  width: 300px;
-  height: auto;
-}
-
-.column1 {
-  margin-top: -95px;
-  font-size: 15px;
-  text-align: Left;
-  color: white;
-  float: left;
-  margin-left: 10px;
-  width: 40%;
-}
-
-/* Clear floats after the columns */
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-@media only screen and (min-width: 1064px) {
-  .banner {
-    background-attachment: fixed;
-  }
-  .stewart-image {
-    width: auto;
-    height: auto;
-  }
-  .container .text {
-    margin-left: 10%;
-    margin-right: 10%;
-    text-align: center;
-  }
-  /* Create three unequal columns that floats next to each other */
+@media only screen and (min-width: 1300px) {
   .column {
-    margin-top: 1px;
     float: left;
-    padding: 10px;
-  }
-  .left, .right {
+    width: 50%;
     text-align: center;
-    width: 30%;
-  }
-  .middle {
-    width: 20%;
+    font-size: 20px;
   }
   /* Clear floats after the columns */
   .row:after {
@@ -111,31 +56,8 @@ body, html {
     display: table;
     clear: both;
   }
-  .column-name {
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
-    font-size: 200px;
-    color: black;
-    left: 0;
-    right: 0;
-  }
-}
-
-@media only screen and (min-width: 646px) {
-  .banner {
-    height: 500px;
-    display: -webkit-inline-box;
-    display: -ms-inline-flexbox;
-    display: inline-flex;
-    width: 100%;
-  }
-  .banner .banner, .banner h1 {
-    text-align: center;
-    color: white;
-    vertical-align: middle;
-    margin: auto;
-    font-size: 80px;
+  img {
+    width: 150px;
   }
 }
 /*# sourceMappingURL=our-team.css.map */

@@ -16,6 +16,7 @@ body, html {
   display: -ms-inline-flexbox;
   display: inline-flex;
   width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
 .banner .banner, .banner h1 {

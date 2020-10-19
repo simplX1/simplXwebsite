@@ -360,8 +360,8 @@ a {
             box-sizing: border-box;
     text-align: center;
   }
-  /* Create three equal columns that floats next to each other */
-  .what-we-do-info-column {
+  z
+.what-we-do-info-column {
     float: left;
     text-align: center;
     width: 33.33%;
