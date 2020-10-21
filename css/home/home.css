@@ -346,6 +346,15 @@ a {
     padding-top: 200px;
     margin-top: -200px;
   }
+  .what-we-do-home .what-we-do-header {
+    font-size: 35px;
+  }
+  .what-we-do-home h2, .what-we-do-row h2, .what-we-do-info-column h2 {
+    font-size: 25px;
+  }
+  .what-we-do-home p, .what-we-do-row p, .what-we-do-info-column p {
+    font-size: 20px;
+  }
   .what-we-do-home, .what-we-do-header, .what-we-do-row, .what-we-do-info-column {
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
