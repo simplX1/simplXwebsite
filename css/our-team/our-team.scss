@@ -7,7 +7,7 @@ body, html{
   }
 //for the banner image and text
 .banner{
-  background: url("../../images/our-team/radek-grzybowski-eBRTYyjwpRY-unsplash.jpg") no-repeat center center fixed;
+  background: url("../../images/our-team/MacBookAir.jpg") no-repeat center center fixed;
   background-position: center center;
   background-repeat: no-repeat;
   background-attachment: scroll;
@@ -21,7 +21,7 @@ body, html{
       color: white;
       vertical-align: middle;
       margin: auto;
-      font-size: 40px;
+      font-size: 80px;
     }
 }
 //------------------
@@ -36,7 +36,7 @@ body, html{
   font-size: 20px; 
 }
   
-img{
+.img-1, .img-2, .img-3, .img-4, .img-5, .img-6, .img-7, .img-8 {
   width: 100px;
 }
 @media only screen and(min-width:1300px ){
@@ -55,7 +55,7 @@ img{
     clear: both;
   }
   
-  img{
+  .img-1, .img-2, .img-3, .img-4, .img-5, .img-6, .img-7, .img-8 {
     width: 150px;
   }
 }
