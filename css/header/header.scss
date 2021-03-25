@@ -2,6 +2,12 @@
 
 //this is the header nav that is shown inplace of the hamburger icon when on bigger screens------------
 
+body, html{
+    font-family: 'Prompt', sans-serif;
+    margin: 0;
+    padding:0;
+  }
+  
 li, a{
     font-family: "Montserrat", sans-serif;
     font-weight: 500;
