@@ -1,145 +1,86 @@
-@import url('https://fonts.googleapis.com/css?family=Prompt&display=swap');
-
-body, html{
+html{
+  //NEED FOR FOOTER TO STAY AT BOTTOM OF PAGE
+  height: 100%;
+  //----------------
+}
+body{
   margin: 0;
   padding: 0;
+  //NEED FOR FOOTER TO STAY AT BOTTOM OF PAGE
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  //--------------------------
 }
 
-.footer-column {
-  
-  display: block;
-  text-align: center;
-  float: left;
-  width: 100%;
-
-  .footer-column,h2{
-    font-size: 30px;
+.footer-image{
+  height: 80px;
+  width: auto!important;
+  padding-top: 15px;
 }
+.footer-p{
+  font-size: 10px;
+  padding-bottom: 15px;
+  margin: 0;
+  color: white;
 }
-.inline-block-style
+.footer-copyright
 {
-  display: block;
+  font-size: 10px;
+  margin: 0;
+  padding-right: 5px;
+  padding-bottom: 5px;
+  //NEED FOR FOOTER TO STAY AT BOTTOM OF PAGE
+  margin-top: auto;
+  color: white;
   text-align: center;
-}
-.footer-align{
-  margin-top: -20px;
+  height: auto; 
 }
 
-/* Clear floats after the columns */
-.footer-row:after {
-  
-  content: "";
-  display: table;
-  clear: both;
-}
-.img{
-    text-align: center;
-    height: 2%;
-    width: 2%;
-}
-
-
-.fa {
-  padding: 20px;
-font-size: 30px;
-width: 20px;
-text-align: center;
-text-decoration: none;
-border-radius: 50%;
-}
-
-.fa:hover {
-  opacity: 0.7;
-}
-
-.fa-facebook {
-background: #3B5998;
-color: white;
-}
-
-.fa-instagram {
-background: #f09433;
-color: white;
-}
-
-footer {
-  font-family: 'prompt','sans-serif';
-  left: 0;
-  bottom: 0;
-  width: 100%;
+.footer-div{
+  margin: 0;
+  padding: 0;
+  //NEED FOR FOOTER TO STAY AT BOTTOM OF PAGE
+  margin-top: auto;
   background-color: #4b4b4b;
-  color: white;
   text-align: center;
-
-@media only screen and (min-width: 1064px){
-
-  
-  .footer-column {
-    
-
-    float: left;
-    width: 24.99%;
-
-    .footer-column,h2{
-      font-size: 30px;
-  }
-  }
-  .inline-block-style
-{
-  display: inline-block;
-  text-align: left;
+  height: auto;
 }
-  
-  /* Clear floats after the columns */
-  .footer-row:after {
-    content: "";
-    display: table;
-    clear: both;
+
+
+
+
+@media only screen and (min-width: 646px){
+  .footer-image{
+      padding-top: 15px;
   }
-  .img{
+  .footer-p{
+      padding-bottom: 15px;
+      margin: 0;
+      color: white;
+  }
+  .footer-copyright
+  {
+      margin: 0;
+      padding-right: 5px;
+      padding-bottom: 5px;
+      //NEED FOR FOOTER TO STAY AT BOTTOM OF PAGE
+      margin-top: auto;
+      color: white;
+      text-align: right;
+      height: auto; 
+  }
+  
+  .footer-div{
+      margin: 0;
+      padding: 0;
+      //NEED FOR FOOTER TO STAY AT BOTTOM OF PAGE
+      margin-top: auto;
+      background-color: #4b4b4b;
       text-align: center;
-      height: 2%;
-      width: 2%;
-  }
+      height: auto;
+    }
   
-
-  .fa {
-    padding: 20px;
-  font-size: 30px;
-  width: 30px;
-  text-align: center;
-  text-decoration: none;
-  border-radius: 50%;
-}
-
-.fa:hover {
-    opacity: 0.7;
-}
-
-.fa-facebook {
-  background: #3B5998;
-  color: white;
-}
-
-.fa-instagram {
-  background: #f09433;
-  color: white;
-}
-
-
-footer {
-    font-family: 'prompt','sans-serif';
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    background-color: #4b4b4b;
-    color: white;
-    text-align: center;
-}
-
-
-
-}
 
 
 }
