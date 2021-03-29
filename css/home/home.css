@@ -1,4 +1,8 @@
 @import url("https://fonts.googleapis.com/css?family=Prompt&display=swap");
+.footer-div {
+  position: unset !important;
+}
+
 .banner {
   background: url("../../images/home/programming.png") no-repeat center center fixed;
   background-position: center center;

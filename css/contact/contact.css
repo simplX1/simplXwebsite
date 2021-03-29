@@ -1,197 +1,112 @@
 @import url("https://fonts.googleapis.com/css?family=Prompt&display=swap");
-body, html {
-  font-family: 'Prompt', sans-serif;
-  margin: 0;
-  padding: 0;
+html {
+  height: 100%;
 }
 
-.banner {
-  background: url("../../images/contact/handshake-4040911.jpg") no-repeat center center fixed;
-  background-position: top top;
-  background-repeat: no-repeat;
-  background-attachment: scroll;
-  background-size: cover;
-  height: 500px;
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  width: 100%;
+body {
+  min-height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
-.banner .banner, .banner h1 {
-  text-align: center;
-  color: white;
-  vertical-align: middle;
-  margin: auto;
-  font-size: 40px;
+.contact-our-team {
+  margin: 0px;
+  font-size: 30px;
 }
 
-.container2, .contact-us {
+.container2 {
   text-align: center;
   margin-left: 7%;
   margin-right: 7%;
 }
 
 form {
-  max-width: 420px;
   margin: auto;
+  text-align: center;
+  max-width: 1100px;
 }
 
-.inputs .block {
-  padding-left: 5px;
-  padding-right: 5px;
-}
-
-.inputs .block .firstNameLabel {
-  color: black;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  float: left;
-}
-
-.inputs .block .firstNameInput {
-  margin-bottom: 20px;
-  margin-top: 5px;
-  display: block;
-  width: 100%;
-  height: 39px;
-  font-size: 15px;
-  line-height: 1.4;
-  color: #6f6f6f;
-  background-color: #ffffff;
-  background-image: none;
-  border: 1px solid #cccccc;
-  border-radius: 0;
-}
-
-.inputs .block .lastNameLabel {
-  color: black;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  float: left;
-}
-
-.inputs .block .lastNameInput {
-  margin-bottom: 20px;
-  margin-top: 5px;
-  display: block;
-  width: 100%;
-  height: 39px;
-  font-size: 15px;
-  line-height: 1.4;
-  color: #6f6f6f;
-  background-color: #ffffff;
-  background-image: none;
-  border: 1px solid #cccccc;
-  border-radius: 0;
-}
-
-.inputs .block .emailAddressLabel {
-  color: black;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  float: left;
-}
-
-.inputs .block .emailAddressInput {
-  margin-bottom: 20px;
-  margin-top: 5px;
-  display: block;
-  width: 100%;
-  height: 39px;
-  font-size: 15px;
-  line-height: 1.4;
-  color: #6f6f6f;
-  background-color: #ffffff;
-  background-image: none;
-  border: 1px solid #cccccc;
-  border-radius: 0;
-}
-
-.inputs .block .contactNumberLabel {
-  color: black;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  float: left;
-}
-
-.inputs .block .contactNumberInput {
-  margin-bottom: 20px;
-  margin-top: 5px;
-  display: block;
-  width: 100%;
-  height: 39px;
-  font-size: 15px;
-  line-height: 1.4;
-  color: #6f6f6f;
-  background-color: #ffffff;
-  background-image: none;
-  border: 1px solid #cccccc;
-  border-radius: 0;
-}
-
-.inputs .block .messageLabel {
-  color: black;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  float: left;
-}
-
-.inputs .block .messageInput {
-  margin-bottom: 20px;
-  margin-top: 5px;
-  display: block;
-  width: 100%;
-  height: 200px;
-  font-size: 15px;
-  line-height: 1.4;
-  color: #6f6f6f;
-  background-color: #ffffff;
-  background-image: none;
-  border: 1px solid #cccccc;
-  border-radius: 0;
-  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
-  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
-  -webkit-transition: border-color ease-in-out .15s, -webkit-box-shadow ease-in-out .15s;
-  transition: border-color ease-in-out .15s, -webkit-box-shadow ease-in-out .15s;
-  transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
-  transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s, -webkit-box-shadow ease-in-out .15s;
-  resize: none;
-}
-
-.inputs .block1 {
+.contact-form {
   text-align: center;
 }
 
-.inputs .submit {
-  -webkit-box-shadow: inset 0px 1px 0px 0px #ffffff;
-          box-shadow: inset 0px 1px 0px 0px #ffffff;
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(5%, #ffffff), to(#f6f6f6));
-  background: linear-gradient(to bottom, #ffffff 5%, #f6f6f6 100%);
-  background-color: #ffffff;
-  border-radius: 6px;
-  border: 1px solid #dcdcdc;
-  display: inline-block;
-  cursor: not-allowed;
-  color: #666666;
-  font-family: Arial;
-  font-size: 15px;
+/*Must include type="text" in HTML*/
+.name {
+  width: 65%;
+  max-width: 700px;
+  height: 60px;
+  font-size: 16px;
+  font-weight: 300;
+  letter-spacing: 3px;
+  padding-left: 30px;
+  padding-right: 30px;
+  background: #FFF;
+  color: #000000;
+  border: 1px solid #000000;
+}
+
+.email,
+.message {
+  width: 65%;
+  max-width: 700px;
+  height: 60px;
+  font-size: 16px;
+  font-weight: 300;
+  letter-spacing: 3px;
+  margin-top: 30px;
+  padding-left: 30px;
+  padding-right: 30px;
+  background: #FFF;
+  color: #000000;
+  border: 1px solid #000000;
+}
+
+.message {
+  height: 216px;
+  padding-top: 29px;
+}
+
+input:focus {
+  outline: none !important;
+}
+
+textarea:focus {
+  outline: none !important;
+}
+
+.submitBtn {
+  cursor: pointer;
+  font-size: 16px;
   font-weight: bold;
-  padding: 6px 24px;
-  text-decoration: none;
-  margin-top: 20px;
-  text-shadow: 0px 1px 0px #ffffff;
+  letter-spacing: 3px;
+  margin: auto;
+  display: block;
+  margin-top: 30px;
+  width: 230px;
+  height: 48px;
+  border-radius: 10px;
+  color: #FFF;
+  background: #000000;
+  border: 0;
+  outline: none;
+  -webkit-transition: background-color 0.5s ease;
+  transition: background-color 0.5s ease;
 }
 
-.inputs .submit:hover {
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(5%, #f6f6f6), to(#ffffff));
-  background: linear-gradient(to bottom, #f6f6f6 5%, #ffffff 100%);
-  background-color: #f6f6f6;
-}
-
-.inputs .submit:active {
+.submitBtn .send-svg {
   position: relative;
-  top: 1px;
+  top: 0.15em;
 }
 
-.inputs .block2 {
-  width: 100%;
-  text-align: center;
+.submitBtn:hover {
+  background-color: #FFF !important;
+  color: #000000;
+  border: 1px solid #000000;
 }
 
 .inputs .g-recaptcha iframe {
@@ -229,11 +144,6 @@ form {
   width: 40%;
 }
 
-.container3 {
-  padding-left: 10px;
-  padding-right: 20px;
-}
-
 .g-recaptcha {
   margin-left: -56px;
 }
@@ -244,69 +154,9 @@ form {
   clear: both;
 }
 
-@media only screen and (min-width: 1064px) {
-  .banner {
-    background-attachment: fixed;
-  }
-}
-
-@media only screen and (min-width: 1494px) {
-  .menu-btn {
-    display: none;
-  }
-  .container .banner h1 {
-    font-size: 100px;
-  }
-  .row2 {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-  }
-  .inputs .block .firstNameInput {
-    width: 250px;
-  }
-  .inputs .block .lastNameInput {
-    width: 250px;
-  }
-  .inputs .block .emailAddressInput {
-    width: 300px;
-  }
-  .inputs .block .messageInput {
-    width: 510px;
-  }
-  .container2 {
-    text-align: center;
-  }
-  .container2, .contact-us {
-    text-align: center;
-    margin-left: 17.5%;
-    margin-right: 17.5%;
-  }
-  .container3 {
-    position: relative;
-  }
-  .column1 {
-    text-align: center;
-  }
-  .column2, #map {
-    margin: auto;
-  }
-}
-
 @media only screen and (min-width: 646px) {
-  .banner {
-    height: 500px;
-    display: -webkit-inline-box;
-    display: -ms-inline-flexbox;
-    display: inline-flex;
-    width: 100%;
-  }
-  .banner .banner, .banner h1 {
-    text-align: center;
-    color: white;
-    vertical-align: middle;
-    margin: auto;
-    font-size: 80px;
+  .contact-our-team {
+    font-size: 60px;
   }
   .row2 {
     display: -webkit-box;
@@ -327,6 +177,29 @@ form {
   }
   .column2, #map {
     min-width: 600px;
+  }
+}
+
+@media only screen and (min-width: 1494px) {
+  .menu-btn {
+    display: none;
+  }
+  .container2 {
+    text-align: center;
+  }
+  .container2, .contact-us {
+    text-align: center;
+    margin-left: 17.5%;
+    margin-right: 17.5%;
+  }
+  .container3 {
+    position: relative;
+  }
+  .column1 {
+    text-align: center;
+  }
+  .column2, #map {
+    margin: auto;
   }
 }
 /*# sourceMappingURL=contact.css.map */

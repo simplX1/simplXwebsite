@@ -1,5 +1,8 @@
 @import url('https://fonts.googleapis.com/css?family=Prompt&display=swap');
-
+//need this to stop footer from overlapping the content near it
+.footer-div {
+  position: unset !important;
+}
 
 // Banner ------------------------------------
 .banner{
