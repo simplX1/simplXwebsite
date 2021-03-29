@@ -3,35 +3,32 @@
 <html>
     <head>
         <link rel="shortcut icon" href="images/SImage.png" type="image/x-icon"/>
-
+        <script src="header.js"></script>
         <link rel='stylesheet' type='text/css' media='screen' href='css/header/header.css'>
     </head>
     <body>
 
         
-    <!-- this is the overlay shown when on non desktop devices-->
-    <nav id="overlay">
-        <img src="images/Close-btn-Black.svg" class="close-btn" id="close-menu">
-        <ul>
-            <li>
-                <span  onclick="window.location='index.html'">HOME</span>
-            </li>
-            <li>
-                <span onclick="window.location='our-team.html'">OUR TEAM</span>
-            </li>
-            <!-- <li>
-                <span onclick="window.location='about.html'">ABOUT</span>
-            </li> -->
-            <li>
-                <span onclick="window.location='contact.html'">CONTACT</span>
-            </li>
-        </ul>
+    <!-- Mobile nav START -->
+    <nav>
+        <div class="navgation">
+            <!-- Hamburger icon START -->
+            <div class="hamburger">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+            <!-- Hamburger icon END -->
+        </div>
+        <div class="mobile-nav">
+            <a href="index.html">HOME</a>
+            <a href="our-team.html">OUR TEAM</a>
+            <a href="contact.html">CONTACT US</a>
+        </div>
     </nav>
-    <!---->
+    <!-- Mobile nav END -->
     <!-- this is the header menu shown when on larger screens like a desktop-->
-    <header>
-        <img src="images/Hamburger Icon-Black.svg" class="menu-btn" id="open-menu">
-       
+    <header>       
         <a href="index.html"><img class="logo" src="images/simplx-black.png" alt="logo"></a>
         
             <ul class="nav_links">
@@ -54,26 +51,7 @@
        
     </header>
     <!---->
-     <!--this will make the hamburger icon active and the x button active when clicked -->
-     <script>
-        var overlay = document.getElementById('overlay');
-        var closeMenu = document.getElementById('close-menu');
-        document.getElementById('open-menu').addEventListener('click', function()
-        {
-            overlay.classList.add('show-menu');
-            //prevents scrolling when overlay is open
-            document.documentElement.style.overflow = 'hidden';
-            document.body.scroll = "no";
-            
-        });
-        document.getElementById('close-menu').addEventListener('click', function()
-        {
-            overlay.classList.remove('show-menu');
-            //allows scrolling when overlay is closed
-            document.documentElement.style.overflow = 'scroll';
-            document.body.scroll = "yes";
-        });
-    </script>
+
 
 
     </body>

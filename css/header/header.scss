@@ -1,5 +1,16 @@
 @import url('https://fonts.googleapis.com/css?family=Prompt&display=swap');
 
+
+//Variable Declarations START
+$background-color: #151515;
+$mobile-nav-background-color: #FFF;
+$white-fonts: #fff;
+$black-fonts: #000000;
+$email-dot-color:#f5f5f5;
+$hover-button-color: black;
+$active-hamburger-line-color-X: #000000;
+$not-active-hamburger-line-color: #000000;
+
 //this is the header nav that is shown inplace of the hamburger icon when on bigger screens------------
 
 body, html{
@@ -64,62 +75,123 @@ header{
     float: right;
     cursor: pointer;
 }
-
-
 //------------------------------------
 
-//This is the overlay that is shown when the hamburger icon is clicked-------------------
-nav{
-   // position: absolute;
-    background: white;
-    padding: 2em;
-    width: calc(100% - 4em);
-    height: calc(100vh - 4em);
-    display: none;
-    .close-btn{
-        margin-right: 5px;
-        margin-top: px;
-        width: 20px;
-        float: right;
-        cursor: pointer;
-    }
 
-    ul{
-        
-        list-style-type: none;
-        
-        padding: 0;
-       
-        grid-template-columns: repeat(4,25%);
-        width: 80%;
-        li{
-            margin: 15px;
-        }
-    }
-    span{
-        text-decoration: none;
-        color: black;
-        font-weight: bold;
-        font-size: 1.4em;
-        
-    }
-}
-.show-menu{
+
+//Mobile navigation and hamburger START
+.mobile-nav {
+    z-index: 1;
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 100%;
+    min-height: 100vh;
     display: block;
-
+    background-color: $mobile-nav-background-color;
+    padding-top: 120px;
+    transition: 0.4s;
+    transition: all 1000ms ease-out;
 }
-//------------------------------------
+.mobile-nav.is-active {
+    right: 0;
+    .hamburger {
+        position: fixed;
+    }
+}
+.mobile-nav a {
+    display: block;
+    width: 100%;
+    max-width: 200px;
+    margin: 0 auto 16px;
+    text-align: center;
+    padding: 12px 16px;
+    color: $black-fonts;
+    text-decoration: none;
+}
+.mobile-nav a:hover {
+    background-color: $hover-button-color;
+    color: $white-fonts;
+}
+.menu {
+    position: fixed;
+    right: 50px;
+    top: 40%;
+}
+.hamburger div:nth-child(1) {
+    width: 27px;
+}
+.hamburger div:nth-child(2) {
+    width: 32px;
+}
+.hamburger div:nth-child(3) {
+    width: 25px;
+}
+.hamburger {
+    z-index: 3;
+    position: absolute;
+    cursor: pointer;
+  //placement of the hambuger
+    right: 24px;
+    padding-top: 40px;
+}
+//Hamburger animation START
+//makes the div lines animate to form the X
+.hamburger.animate {
+    //moves ham to be inline with menu text
+    margin-top: -2px;
+    .line:nth-child(1) {
+        background: $active-hamburger-line-color-X;
+        width: 27px;
+        transform: rotate(45deg);
+        transform-origin: 0% 48%;
+    }
+    .line:nth-child(2) {
+        width: 27px;
+        opacity: 0;
+    }
+    .line:nth-child(3) {
+        background: $active-hamburger-line-color-X;
+        width: 27px;
+        transform: rotate(-45deg);
+        transform-origin: 16% 100%;
+    }
+}
+//hamburger line styling START
+.line {
+    height: 3px;
+    background-color: $not-active-hamburger-line-color;
+    margin: 5px;
+    transition: all cubic-bezier(0.26, 1, 0.27, 1.55) 0.35s;
+}
+//hamburger line styling END --------------
+//Mobile navigation and hamburger END ---------
+
 
 @media only screen and (min-width: 1064px){
-    //hides the hamburger icon ---------------
-    .menu-btn{
-        display: none;
-    }
     .nav_links li{
         display: inline-block;
     }
-    //-----------------
-    //header menu------------------
+
    
     //---------------------------------------------
     }
+// Media query 990px - START
+@media screen and (min-width: 990px) {
+    //when resizing screen hide or show mobile when open - START
+    body {
+      overflow: unset !important;
+    }
+    .mobile-nav {
+      right: -100% !important;
+    }
+    //when resizing screen hide or show mobile when open - END --------
+    .hamburger {
+      display: none;
+    }
+    .menu {
+      display: block;
+    }
+  }
+  // Media query 990px - END ---------------
+  
